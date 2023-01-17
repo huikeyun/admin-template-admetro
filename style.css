@@ -3909,7 +3909,7 @@ button.btn-primary.dim {
     border-radius: 3px;
     box-shadow: none !important;
 }
-/* :: Dragula CSS */
+/* :: 拖拽排序 CSS */
 .dragula-example {
     margin-bottom: 6px;
 }

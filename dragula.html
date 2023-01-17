@@ -90,7 +90,7 @@
                                 <a href="file-manager.html">File Manager</a>
                             </li>
                             <li class="active">
-                                <a href="dragula.html">Dragula</a>
+                                <a href="dragula.html">拖拽排序</a>
                             </li>
                             <li>
                                 <a href="sweet-alert.html">Sweet Alert</a>
@@ -561,22 +561,22 @@
         </header>
         <!-- 主要内容区 -->
         <div class="main-content">
-            <!-- Dragula区域开始 -->
+            <!-- 拖拽排序 区域开始 -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-6 mb-30">
                         <div class="card bg-boxshadow full-height">
                             <div class="card-body">
-                                <h5 class="card-title mb-30">Dragula (You Can Easily Move the Content)</h5>
+                                <h5 class="card-title mb-30">Dragula（您可以轻松移动内容）</h5>
                                 <div id="dragula-left">
                                     <div class="dragula-example card-condenced">
-                                        <h6 class="mb-0 border p-3">You can move these elements between these two containers</h6>
+                                        <h6 class="mb-0 border p-3">你可以在这两个容器之间移动这些元素</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">Moving them anywhere else isn't quite possible</h6>
+                                        <h6 class="mb-0 border p-3">不太可能将它们移动到其他地方</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">Anything can be moved around. That includes images</h6>
+                                        <h6 class="mb-0 border p-3">任何东西都可以移动。 这包括图片</h6>
                                         <img src="img/bg-img/bg-4.jpg" alt="" class="w-100 mt-3">
                                     </div>
                                 </div>
@@ -588,28 +588,30 @@
                             <div class="card-body">
                                 <div id="dragula-right">
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 mb-0 border p-3"> There's also the possibility of moving elements around in the same container, changing their position</h6>
+                                        <h6 class="mb-0 mb-0 border p-3"> 还有可能在同一个容器中移动元素，改变它们的位置</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">This is the default use case. You only need to specify the containers you want to use</h6>
+                                        <h6 class="mb-0 border p-3">这是默认用例。 你只需要指定你想使用的容器</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">More interactive use cases lie ahead</h6>
+                                        <h6 class="mb-0 border p-3">更多交互式用例在前面</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <p>Moving
-                                            <code>&lt;input/&gt;</code> elements works just fine. You can still focus them, too.
+                                        <p>移动
+                                            <code>&lt;input/&gt;</code> 元素工作得很好。 您仍然可以关注它们。
                                         </p>
-                                        <input placeholder="See?" class="form-control">
+                                        <label>
+                                            <input placeholder="看到了吗？" class="form-control">
+                                        </label>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">More interactive use cases lie ahead</h6>
+                                        <h6 class="mb-0 border p-3">更多交互式用例在前面</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">Make sure to check out the</h6>
+                                        <h6 class="mb-0 border p-3">确保签出</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">More interactive use cases lie ahead</h6>
+                                        <h6 class="mb-0 border p-3">更多交互式用例在前面</h6>
                                     </div>
                                 </div>
                             </div>
@@ -620,15 +622,15 @@
                             <div class="card-body">
                                 <div id="dragula-left-copy">
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3"> When elements are copyable, they can't be sorted in their origin container</h6>
+                                        <h6 class="mb-0 border p-3">当元素可复制时，它们不能在其原始容器中排序</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">Copying prevents original elements from being dragged. A copy gets created and
-                                            <em>that</em> gets dragged instead</h6>
+                                        <h6 class="mb-0 border p-3">复制防止原始元素被拖动。 创建一个副本并
+                                            <em>那</em>反而被拖了</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">Whenever that happens, a
-                                            <code>cloned</code> event is raised</h6>
+                                        <h6 class="mb-0 border p-3">每当发生这种情况时，
+                                            <code>cloned</code> 事件被触发</h6>
                                     </div>
                                 </div>
                             </div>
@@ -639,13 +641,13 @@
                             <div class="card-body">
                                 <div id="dragula-right-copy">
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3"> Note that the clones get destroyed if they're not dropped into another container</h6>
+                                        <h6 class="mb-0 border p-3"> 请注意，如果克隆没有被放入另一个容器中，它们就会被销毁</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">You'll be dragging a copy, so when they're dropped into another container you'll see the duplication.</h6>
+                                        <h6 class="mb-0 border p-3">您将拖动一个副本，因此当它们被放入另一个容器中时您会看到重复项。</h6>
                                     </div>
                                     <div class="dragula-example card card-condenced">
-                                        <h6 class="mb-0 border p-3">More interactive use cases lie ahead.</h6>
+                                        <h6 class="mb-0 border p-3">更多交互式用例在前面。</h6>
                                     </div>
                                 </div>
                             </div>
