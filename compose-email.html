@@ -241,7 +241,7 @@
                                 <a href="email-view.html">E-mail View</a>
                             </li>
                             <li class="active">
-                                <a href="compose-email.html">Compose Mail</a>
+                                <a href="compose-email.html">写邮件</a>
                             </li>
                         </ul>
                     </li>
@@ -369,15 +369,15 @@
                 </div>
                 <!-- 左侧导航 -->
                 <ul class="left-side-navbar d-flex align-items-center">
-                    <li class="nav-item <!-- 激活JS -->">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions
+                    <li class="nav-item dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">手风琴
                             <i class="fa fa-angle-down"></i></button>
                         <!-- 下拉菜单 -->
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                            <a class="dropdown-item" href="#">Another Action</a>
-                            <a class="dropdown-item" href="#">Something Else Here</a>
+                            <a class="dropdown-item" href="#">操作 1</a>
+                            <a class="dropdown-item" href="#">操作 2</a>
+                            <a class="dropdown-item" href="#">另一个动作</a>
+                            <a class="dropdown-item" href="#">这里还有其他内容</a>
                         </div>
                     </li>
                 </ul>
@@ -571,69 +571,69 @@
                                             <div class="ibox">
                                                 <div class="ibox-content mailbox-content">
                                                     <div class="file-manager">
-                                                        <a class="btn rounded-btn bg-primary w-100" href="compose-email.html">Compose Mail</a>
+                                                        <a class="btn rounded-btn bg-primary w-100" href="compose-email.html">写邮件</a>
                                                         <!-- 标题 -->
                                                         <div class="folder-title mt-30">
-                                                            <h6 class="primary-color-text">Folders</h6>
+                                                            <h6 class="primary-color-text">文件夹</h6>
                                                         </div>
                                                         <ul class="folder-list">
                                                             <li>
-                                                                <a href="inbox.html"><i class="ti-email"></i> Inbox
+                                                                <a href="inbox.html"><i class="ti-email"></i> 收件箱
                                                                     <span class="badge badge-pill badge-primary inbox float-right">25</span>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="inbox.html"><i class="ti-share"></i> Send Mail
+                                                                <a href="inbox.html"><i class="ti-share"></i> 发送邮件
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="inbox.html">
-                                                                    <i class="fa fa-certificate"></i> Important
+                                                                    <i class="fa fa-certificate"></i> 重要
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="inbox.html">
-                                                                    <i class="fa fa-file-text-o"></i> Drafts
+                                                                    <i class="fa fa-file-text-o"></i> 草稿
                                                                     <span class="badge badge-pill badge-warning inbox float-right">3</span>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="inbox.html"><i class="fa fa-trash-o"></i> Trash
+                                                                <a href="inbox.html"><i class="fa fa-trash-o"></i> 垃圾桶
                                                                     <span class="badge badge-pill badge-danger inbox float-right">4</span>
                                                                 </a>
                                                             </li>
                                                         </ul>
                                                         <!-- 标题 -->
                                                         <div class="categori-title mt-30">
-                                                            <h6 class="primary-color-text">LABELS</h6>
+                                                            <h6 class="primary-color-text">标签</h6>
                                                         </div>
                                                         <!-- 列表 -->
                                                         <ul class="category-list">
                                                             <li>
                                                                 <a href="inbox.html">
-                                                                    <i class="fa fa-circle text-navy"></i> Clients
+                                                                    <i class="fa fa-circle text-navy"></i>客户
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="inbox.html">
-                                                                    <i class="fa fa-circle text-danger"></i> Important
+                                                                    <i class="fa fa-circle text-danger"></i> 重要
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="inbox.html">
-                                                                    <i class="fa fa-circle text-primary"></i> Social
+                                                                    <i class="fa fa-circle text-primary"></i> 社交
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="inbox.html">
-                                                                    <i class="fa fa-circle text-info"></i> Other
+                                                                    <i class="fa fa-circle text-info"></i> 其他
                                                                 </a>
                                                             </li>
                                                         </ul>
                                                         <div class="clearfix"></div>
                                                         <!-- 标题 -->
                                                         <div class="categori-title mt-30">
-                                                            <h6 class="primary-color-text">Tags</h6>
+                                                            <h6 class="primary-color-text"> 标签</h6>
                                                         </div>
                                                         <!-- 列表 -->
                                                         <ul class="category-list">
@@ -667,38 +667,42 @@
                                         <div class="col-12 col-lg-8 col-xl-9">
                                             <div class="box box-primary">
                                                 <div class="box-header with-border compose">
-                                                    <h5 class="mb-30">Compose Message</h5>
+                                                    <h5 class="mb-30">写邮件</h5>
                                                 </div>
                                                 <!-- Box-header -->
                                                 <div class="box-body">
                                                     <div class="form-group">
-                                                        <input type="email" class="form-control" placeholder="To:">
+                                                        <label>
+                                                            <input type="email" class="form-control" placeholder="收件人：">
+                                                        </label>
                                                     </div>
                                                     <div class="form-group mb-30">
-                                                        <input type="text" class="form-control" placeholder="Subject:">
+                                                        <label>
+                                                            <input type="text" class="form-control" placeholder="主题：">
+                                                        </label>
                                                     </div>
                                                     <div class="form-group">
-                                                        <textarea id="compose-textarea" class="form-control height-200" placeholder="Your Message Here......"></textarea>
+                                                        <label for="compose-textarea"></label><textarea id="compose-textarea" class="form-control height-200" placeholder="您的留言……"></textarea>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="btn btn-orange btn-file compo-email">
                                                             <i class="fa fa-paperclip"></i>
                                                             <input type="file" name="attachment">
                                                         </div>
-                                                        <p class="help-block">Max. 40MB</p>
+                                                        <p class="help-block">最大尺寸：40MB</p>
                                                     </div>
                                                 </div>
                                                 <!-- Box-body -->
                                                 <div class="box-footer">
                                                     <div class="pull-right">
                                                         <button type="button" class="btn rounded-btn bg-primary mb-2">
-                                                            <i class="fa fa-pencil"></i> Draft
+                                                            <i class="fa fa-pencil"></i> 草稿
                                                         </button>
                                                         <button type="submit" class="btn rounded-btn bg-primary mb-2">
-                                                            <i class="fa fa-envelope-o"></i> Send
+                                                            <i class="fa fa-envelope-o"></i> 发送
                                                         </button>
                                                         <button type="reset" class="btn rounded-btn bg-primary mb-2">
-                                                            <i class="fa fa-times"></i> Discard
+                                                            <i class="fa fa-times"></i> 丢弃
                                                         </button>
                                                     </div>
                                                 </div>

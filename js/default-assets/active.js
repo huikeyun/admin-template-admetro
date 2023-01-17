@@ -176,7 +176,7 @@
         $("dropdown-toggle").dropdown();
     }
 
-    // :: Compose Mail 激活代码
+    // :: 写邮件 激活代码
     if ($.fn.wysihtml5) {
         $("#compose-textarea").wysihtml5();
     }
