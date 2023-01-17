@@ -17,10 +17,10 @@ Version: v1.0
         + Nice Select CSS
         + jQuery UI CSS
     * Include Web Icon Fonts
-        + Themify Icons
+        + Themify 图标
         + Font Awesome
         + Pe 7 Stroke
-        + Elegant Icons
+        + Elegant 图标
         + Material Design Iconic Font
         + Etline
     * Template Mixins
@@ -76,7 +76,7 @@ Version: v1.0
         + Pricing Table
         + 数据表格
         + CTA
-        + Web Icons
+        + Web 图标
     * Email
         + Inbox
         + Email View
@@ -8473,7 +8473,7 @@ table.dataTable thead > tr > td {
     font-size: 16px;
     color: #222222;
 }
-/* :: Web Icons CSS */
+/* :: Web 图标 CSS */
 .single_icon {
     padding: 15px;
     text-align: center;
