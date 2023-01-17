@@ -2,55 +2,55 @@
     'use strict';
 
     function bar_stacked() {
-        var axis_x_type = 'category',
+        let axis_x_type = 'category',
             axis_rotated = false;
 
-        var generate = function () {
-                return c3.generate({
-                    bindto: '#bar_stacked_charts',
-                    data: {
-                        columns: [
-            ['data1', 40, 200, 300, 400, 150, -250],
-            ['data2', 130, -100, 100, 200, 150, 50],
-            ['data3', 230, -200, 200, 0, 250, 250]
-          ],
-                        type: 'bar',
-                        groups: [
-            ['data1', 'data2']
-          ]
+        const generate = function () {
+            return c3.generate({
+                bindto: '#bar_stacked_charts',
+                data: {
+                    columns: [
+                        ['条形堆叠数据1', 40, 200, 300, 400, 150, -250],
+                        ['条形堆叠数据2', 130, -100, 100, 200, 150, 50],
+                        ['条形堆叠数据3', 230, -200, 200, 0, 250, 250]
+                    ],
+                    type: 'bar',
+                    groups: [
+                        ['条形堆叠数据1', '条形堆叠数据2']
+                    ]
+                },
+                color: {
+                    pattern: ['#6156ce', '#07e0c4', '#00b1f4', '#f8538d']
+                },
+                axis: {
+                    x: {
+                        type: axis_x_type
                     },
-                    color: {
-                        pattern: ['#6156ce', '#07e0c4', '#00b1f4', '#f8538d']
-                    },
-                    axis: {
-                        x: {
-                            type: axis_x_type
-                        },
-                        rotated: axis_rotated
-                    },
-                    grid: {
-                        y: {
-                            lines: [{
-                                value: 0
-                                }]
-                        }
-                    },
-                });
-            },
-            chart = generate();
+                    rotated: axis_rotated
+                },
+                grid: {
+                    y: {
+                        lines: [{
+                            value: 0
+                        }]
+                    }
+                },
+            });
+        };
+        let chart = generate();
 
         function update1() {
-            chart.groups([['data1', 'data2', 'data3']])
+            chart.groups([['条形堆叠数据1', '条形堆叠数据2', '条形堆叠数据3']])
         }
 
         function update2() {
             chart.load({
-                columns: [['data4', 100, 50, 150, -200, 300, -100]]
+                columns: [['条形堆叠数据4', 100, 50, 150, -200, 300, -100]]
             });
         }
 
         function update3() {
-            chart.groups([['data1', 'data2', 'data3', 'data4']])
+            chart.groups([['条形堆叠数据1', '条形堆叠数据2', '条形堆叠数据3', '条形堆叠数据4']])
         }
 
 
@@ -91,25 +91,25 @@
     bar_stacked();
 
     function donut() {
-        var chart = c3.generate({
+        const chart = c3.generate({
             bindto: '#donut_charts',
             data: {
                 columns: [
-            ["versicolor", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
-            ["virginica", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8],
-            ["setosa", 30],
-//            ["versicolor", 40],
-//            ["virginica", 50],
-          ],
+                    ["圆环图数据1", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
+                    ["圆环图数据2", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8],
+                    ["圆环图数据3", 30],
+//            ["数据1", 40],
+//            ["数据2", 50],
+                ],
                 type: 'donut',
                 onmouseover: function (d, i) {
-                    console.log("onmouseover", d, i, this);
+                    console.log("鼠标悬停", d, i, this);
                 },
                 onmouseout: function (d, i) {
-                    console.log("onmouseout", d, i, this);
+                    console.log("鼠标移出", d, i, this);
                 },
                 onclick: function (d, i) {
-                    console.log("onclick", d, i, this);
+                    console.log("点击", d, i, this);
                 },
                 order: null // set null to disable sort of data. desc is the default.
             },
@@ -128,7 +128,7 @@
                 label: {
                     //            format: function (d, ratio) { return ""; }
                 },
-                title: "Iris Petal Width",
+                title: "虹膜花瓣宽",
                 width: 70
             }
         });
@@ -136,8 +136,8 @@
         setTimeout(function () {
             chart.load({
                 columns: [
-            ['data1', 30, 20, 50, 40, 60, 50],
-          ]
+                    ['圆环图数据4', 30, 20, 50, 40, 60, 50],
+                ]
             });
         }, 1000);
 
@@ -147,25 +147,26 @@
             });
         }, 2000);
     }
+
     donut();
 
     function gauge() {
-        var chart = c3.generate({
+        const chart = c3.generate({
             bindto: '#gauge_charts',
             height: 190,
             data: {
                 columns: [
-            ['data', 91.4]
-          ],
+                    ['仪表图数据', 91.4]
+                ],
                 type: 'gauge',
                 onmouseover: function (d, i) {
-                    console.log("onmouseover", d, i, this);
+                    console.log("鼠标悬停", d, i, this);
                 },
                 onmouseout: function (d, i) {
-                    console.log("onmouseout", d, i, this);
+                    console.log("鼠标移出", d, i, this);
                 },
                 onclick: function (d, i) {
-                    console.log("onclick", d, i, this);
+                    console.log("点击", d, i, this);
                 },
             },
             gauge: {
@@ -193,12 +194,12 @@
             }
         });
 
-        var chart1 = c3.generate({
+        const chart1 = c3.generate({
             bindto: '#chart1',
             data: {
                 columns: [
-                  ['data', 70.0]
-              ],
+                    ['仪表图数据', 70.0]
+                ],
                 type: 'gauge',
             },
             gauge: {
@@ -207,12 +208,12 @@
             }
         });
 
-        var chart2 = c3.generate({
+        const chart2 = c3.generate({
             bindto: '#chart2',
             data: {
                 columns: [
-                  ['data', 0.0]
-              ],
+                    ['仪表图数据', 0.0]
+                ],
                 type: 'gauge',
             },
             gauge: {
@@ -221,12 +222,12 @@
             }
         });
 
-        var chart3 = c3.generate({
+        const chart3 = c3.generate({
             bindto: '#chart3',
             data: {
                 columns: [
-                  ['data', -75.0]
-              ],
+                    ['仪表图数据', -75.0]
+                ],
                 type: 'gauge',
             },
             gauge: {
@@ -235,29 +236,29 @@
             }
         });
 
-        var cycleDemo = function () {
+        const cycleDemo = function () {
 
             setTimeout(function () {
                 d3.select('#chart .c3-chart-arcs-background')
                     .transition()
-                    .style('fill', '#444');
+                    .style('fill', '#444444');
             }, 1000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 10]]
+                    columns: [['仪表图数据', 10]]
                 });
             }, 2000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 50]]
+                    columns: [['仪表图数据', 50]]
                 });
             }, 3000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 91.4]]
+                    columns: [['仪表图数据', 91.4]]
                 });
             }, 4000);
 
@@ -269,59 +270,59 @@
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 0]]
+                    columns: [['仪表图数据', 0]]
                 });
             }, 6000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 50]]
+                    columns: [['仪表图数据', 50]]
                 });
             }, 7000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 91.4]]
+                    columns: [['仪表图数据', 91.4]]
                 });
             }, 8000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 0]]
+                    columns: [['仪表图数据', 0]]
                 });
             }, 9000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 50]]
+                    columns: [['仪表图数据', 50]]
                 });
             }, 10000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 91.4]]
+                    columns: [['仪表图数据', 91.4]]
                 });
             }, 11000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 0]]
+                    columns: [['仪表图数据', 0]]
                 });
             }, 12000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 50]]
+                    columns: [['仪表图数据', 50]]
                 });
             }, 13000);
 
             setTimeout(function () {
                 chart.load({
-                    columns: [['data', 91.4]]
+                    columns: [['仪表图数据', 91.4]]
                 });
             }, 14000);
 
-        }
+        };
 
         cycleDemo();
     }
@@ -329,53 +330,53 @@
     gauge();
 
     function pie_short() {
-        var sort = true;
-        var generate = function () {
-                return c3.generate({
-                    bindto: '#pie_short_charts',
-                    data: {
-                        columns: [
-//            ["setosa", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
-            ["versicolor", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
-            ["virginica", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8],
-            ["setosa", 30],
-//            ["versicolor", 40],
-//            ["virginica", 50],
-          ],
-                        type: 'pie',
+        let sort = true;
+        const generate = function () {
+            return c3.generate({
+                bindto: '#pie_short_charts',
+                data: {
+                    columns: [
+//            ["饼形图数据3", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
+                        ["饼形图数据1", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
+                        ["饼形图数据2", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8],
+                        ["饼形图数据3", 30],
+//            ["饼形图数据1", 40],
+//            ["饼形图数据2", 50],
+                    ],
+                    type: 'pie',
+                },
+                color: {
+                    pattern: ['#e95f2b', '#3b3f5c', '#ffc107', '#007bff']
+                },
+                axis: {
+                    x: {
+                        label: 'Sepal.Width'
                     },
-                    color: {
-                        pattern: ['#e95f2b', '#3b3f5c', '#ffc107', '#007bff']
-                    },
-                    axis: {
-                        x: {
-                            label: 'Sepal.Width'
-                        },
-                        y: {
-                            label: 'Petal.Width'
-                        }
-                    },
-                    pie: {
-                        sort: sort,
-                        onmouseover: function (d, i) {
-                            console.log(d, i);
-                        },
-                        onmouseout: function (d, i) {
-                            console.log(d, i);
-                        },
-                        onclick: function (d, i) {
-                            console.log(d, i);
-                        },
+                    y: {
+                        label: 'Petal.Width'
                     }
-                });
-            },
-            chart = generate();
+                },
+                pie: {
+                    sort: sort,
+                    onmouseover: function (d, i) {
+                        console.log(d, i);
+                    },
+                    onmouseout: function (d, i) {
+                        console.log(d, i);
+                    },
+                    onclick: function (d, i) {
+                        console.log(d, i);
+                    },
+                }
+            });
+        };
+        let chart = generate();
 
         setTimeout(function () {
             chart.load({
                 columns: [
-            ["setosa", 130],
-          ]
+                    ["饼形图数据3", 130],
+                ]
             });
         }, 1000);
 
@@ -388,8 +389,8 @@
         setTimeout(function () {
             chart.load({
                 columns: [
-            ["new data", 300],
-          ]
+                    ["饼形图数据4", 300],
+                ]
             });
         }, 3000);
 
@@ -401,8 +402,8 @@
         setTimeout(function () {
             chart.load({
                 columns: [
-            ["setosa", 130],
-          ]
+                    ["饼形图数据3", 130],
+                ]
             });
         }, 5000);
 
@@ -415,8 +416,8 @@
         setTimeout(function () {
             chart.load({
                 columns: [
-            ["new data", 300],
-          ]
+                    ["饼形图数据4", 300],
+                ]
             });
         }, 7000);
     }
@@ -424,28 +425,28 @@
     pie_short();
 
     function timeseries_descendent() {
-        var dates = ['date',
-        1401908040000,
-        1401907980000,
-        1401907920000,
-        1401907860000,
-        1401907800000,
-        1401907740000,
-        1401907680000,
-        1401907620000,
-        1401907560000,
-        1401907500000
-      ];
+        const dates = ['date',
+            1401908040000,
+            1401907980000,
+            1401907920000,
+            1401907860000,
+            1401907800000,
+            1401907740000,
+            1401907680000,
+            1401907620000,
+            1401907560000,
+            1401907500000
+        ];
 
-        var chart = c3.generate({
+        const chart = c3.generate({
             bindto: '#timeseries_descendent_charts',
             data: {
                 x: 'date',
                 columns: [
-            dates,
-            ['data1', 30, 200, 100, 400, 150, 250, 30, 200, 100, 400],
-            ['data2', 130, 300, 200, 450, 250, 350, 130, 300, 200, 450]
-          ],
+                    dates,
+                    ['时间序列下序列数据1', 30, 200, 100, 400, 150, 250, 30, 200, 100, 400],
+                    ['时间序列下序列数据2', 130, 300, 200, 450, 250, 350, 130, 300, 200, 450]
+                ],
                 types: {
                     data1: 'bar',
                 }

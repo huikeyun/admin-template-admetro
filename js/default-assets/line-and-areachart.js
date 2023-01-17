@@ -128,7 +128,7 @@
             "axisAlpha": 0,
             "gridAlpha": 0,
             "position": "left",
-            "title": "distance"
+            "title": "距离"
         }, {
             "id": "latitudeAxis",
             "axisAlpha": 0,
@@ -139,8 +139,8 @@
             "id": "durationAxis",
             "duration": "mm",
             "durationUnits": {
-                "hh": "h ",
-                "mm": "min"
+                "hh": "小时",
+                "mm": "分钟"
             },
             "axisAlpha": 0,
             "gridAlpha": 0,
@@ -153,16 +153,16 @@
             "balloonText": "[[value]] miles",
             "dashLengthField": "dashLength",
             "fillAlphas": 0.9,
-            "legendPeriodValueText": "total: [[value.sum]] mi",
-            "legendValueText": "[[value]] mi",
-            "title": "distance",
+            "legendPeriodValueText": "总数: [[value.sum]] 米",
+            "legendValueText": "[[value]] 米",
+            "title": "距离",
             "type": "column",
             "valueField": "distance",
             "valueAxis": "distanceAxis",
             "fillColors": "#17a2b8",
             "lineColor": "#17a2b8"
         }, {
-            "balloonText": "latitude:[[value]]",
+            "balloonText": "纬度:[[value]]",
             "bullet": "round",
             "bulletBorderAlpha": 1,
             "useLineColorForBulletBorder": true,
@@ -173,7 +173,7 @@
             "labelPosition": "right",
             "labelText": "[[townName2]]",
             "legendValueText": "[[value]]/[[description]]",
-            "title": "latitude/city",
+            "title": "纬度/城市",
             "fillAlphas": 0,
             "valueField": "latitude",
             "valueAxis": "latitudeAxis",
@@ -185,7 +185,7 @@
             "bulletBorderThickness": 1,
             "dashLengthField": "dashLength",
             "legendValueText": "[[value]]",
-            "title": "duration",
+            "title": "持续时间",
             "fillAlphas": 0,
             "valueField": "duration",
             "valueAxis": "durationAxis",

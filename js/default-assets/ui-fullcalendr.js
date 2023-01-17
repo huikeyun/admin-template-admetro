@@ -45,7 +45,7 @@
             className: 'fc-event-danger'
   },
         {
-            title: 'Lunch',
+            title: '午饭',
             start: new Date(y, m, d - 3, 12, 0),
             className: 'fc-event-info',
             backgroundColor: 'rgba(88, 103, 221, 0.8)'

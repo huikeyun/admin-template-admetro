@@ -2,12 +2,12 @@
     'use strict';
 
     function api_axis_range() {
-        var chart = c3.generate({
+        const chart = c3.generate({
             bindto: '#api_axis_range_charts',
             data: {
                 columns: [
-                    ['data1', 30, 200, 100, 400, 150, 250],
-                    ['data2', 50, 20, 10, 40, 15, 25]
+                    ['数据1', 30, 200, 100, 400, 150, 250],
+                    ['数据2', 50, 20, 10, 40, 15, 25]
                 ],
                 axes: {
                     data1: 'y',
@@ -23,14 +23,14 @@
                 },
                 y: {
                     label: {
-                        text: 'Y Axis Label',
+                        text: 'Y 轴标签',
                         position: 'outer-middle'
                     }
                 },
                 y2: {
                     show: true,
                     label: {
-                        text: 'Y2 Axis Label',
+                        text: 'Y2 轴标签',
                         position: 'outer-middle'
                     }
                 }
@@ -105,13 +105,13 @@
     // Chart-1 End
 
     function api_transform() {
-        var chart = c3.generate({
+        let chart = c3.generate({
             bindto: '#api_transform_charts',
             data: {
                 columns: [
-              ['data1', 30, 200, 100, 400, 150, 250],
-              ['data2', 50, 20, 10, 40, 15, 25]
-            ],
+                    ['数据1', 30, 200, 100, 400, 150, 250],
+                    ['数据2', 50, 20, 10, 40, 15, 25]
+                ],
             },
             color: {
                 pattern: ['#ff3743', '#00b1f4']

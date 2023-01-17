@@ -4,39 +4,32 @@
         "color": "#ffffff",
         "theme": "light",
         "dataProvider": [{
-                "country": "USA",
-                "visits": 2025,
+            "country": "美国",
+            "visits": 2025,
         }, {
-                "country": "Ger",
-                "visits": 1682,
+            "country": "德国",
+            "visits": 1682,
         }, {
-                "country": "Jap",
-                "visits": 1809,
+            "country": "日本",
+            "visits": 1809,
         }, {
-                "country": "Chi",
-                "visits": 1422,
+            "country": "中国",
+            "visits": 1422,
         }, {
-                "country": "UK",
-                "visits": 1222,
+            "country": "英国",
+            "visits": 1222,
         }, {
-                "country": "Fra",
-                "visits": 1414,
+            "country": "法国",
+            "visits": 1414,
         }, {
-                "country": "Ind",
-                "visits": 1084,
+            "country": "印度",
+            "visits": 1084,
         }, {
-                "country": "Spain",
-                "visits": 811,
-        },
-            {
-                "country": "Can",
-                "visits": 441,
-        }, {
-                "country": "Bra",
-                "visits": 495,
+            "country": "西班牙",
+            "visits": 811,
         }],
         "valueAxes": [{
-            "gridColor": "#FFFFFF",
+            "gridColor": "#ffffff",
             "gridAlpha": 0.2,
             "dashLength": 0
         }],
@@ -68,7 +61,7 @@
         }
     });
 
-    var chart = AmCharts.makeChart("columnlinemixchartdiv", {
+    let chart = AmCharts.makeChart("columnlinemixchartdiv", {
         "type": "serial",
         "addClassNames": true,
         "theme": "light",
@@ -112,7 +105,7 @@
             "expenses": 32.9,
             "dashLengthColumn": 5,
             "alpha": 0.2,
-            "additional": "(projection)"
+            "additional": "(预测)"
         }],
         "valueAxes": [{
             "axisAlpha": 0,
@@ -121,9 +114,9 @@
         "startDuration": 1,
         "graphs": [{
             "alphaField": "alpha",
-            "balloonText": "<span style='font-size:12px;'>[[title]] in [[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
+            "balloonText": "<span style='font-size:12px;'>在[[category]]年收入[[title]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
             "fillAlphas": 1,
-            "title": "Income",
+            "title": "收入",
             "type": "column",
             "valueField": "income",
             "dashLengthField": "dashLengthColumn",
@@ -137,7 +130,7 @@
             "lineThickness": 3,
             "bulletSize": 7,
             "bulletBorderAlpha": 1,
-            "bulletColor": "#FFFFFF",
+            "bulletColor": "#ffffff",
             "useLineColorForBulletBorder": true,
             "bulletBorderThickness": 3,
             "fillAlphas": 0,
@@ -158,7 +151,7 @@
         }
     });
 
-    var chart = AmCharts.makeChart("clusteredbarchartdiv", {
+    chart = AmCharts.makeChart("clusteredbarchartdiv", {
         "type": "serial",
         "theme": "light",
         "categoryField": "year",
@@ -172,38 +165,38 @@
         "trendLines": [],
         "graphs": [
             {
-                "balloonText": "Income:[[value]]",
+                "balloonText": "收入:[[value]]",
                 "fillAlphas": 1,
                 "id": "AmGraph-1",
                 "lineAlpha": 0.2,
-                "title": "Income",
+                "title": "收入",
                 "type": "column",
                 "valueField": "income",
                 "fillColors": "#17a2b8",
                 "lineColor": "#17a2b8"
 
-        },
+            },
             {
-                "balloonText": "Expenses:[[value]]",
+                "balloonText": "支出:[[value]]",
                 "fillAlphas": 1,
                 "id": "AmGraph-2",
                 "lineAlpha": 0.2,
-                "title": "Expenses",
+                "title": "支出",
                 "type": "column",
                 "valueField": "expenses",
                 "fillColors": "#f8538d",
                 "lineColor": "#f8538d"
 
-        }
-  ],
+            }
+        ],
         "guides": [],
         "valueAxes": [
             {
                 "id": "ValueAxis-1",
                 "position": "top",
                 "axisAlpha": 0
-        }
-  ],
+            }
+        ],
         "allLabels": [],
         "balloon": {},
         "titles": [],
@@ -212,35 +205,35 @@
                 "year": 2005,
                 "income": 23.5,
                 "expenses": 18.1
-        },
+            },
             {
                 "year": 2006,
                 "income": 26.2,
                 "expenses": 22.8
-        },
+            },
             {
                 "year": 2007,
                 "income": 30.1,
                 "expenses": 23.9
-        },
+            },
             {
                 "year": 2008,
                 "income": 29.5,
                 "expenses": 25.1
-        },
+            },
             {
                 "year": 2009,
                 "income": 24.6,
                 "expenses": 25
-        }
-  ],
+            }
+        ],
         "export": {
             "enabled": true
         }
 
     });
 
-    var chart = AmCharts.makeChart("cylinderchartdiv", {
+    chart = AmCharts.makeChart("cylinderchartdiv", {
         "theme": "light",
         "type": "serial",
         "color": "#ffffff",

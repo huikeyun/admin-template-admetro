@@ -3,10 +3,10 @@
 
     $('.dropify').dropify({
         messages: {
-            'default': 'Click to Upload or Drag & Drop',
+            'default': '点击上传或拖放',
             'remove': '<i class="ti-close"></i>',
-            'replace': 'Upload or Drag n Drop'
+            'replace': '上传或拖放'
         }
     });
-    
+
 })(jQuery);
