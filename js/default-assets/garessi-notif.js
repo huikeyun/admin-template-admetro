@@ -2,7 +2,7 @@
     "use strict";
 
     $("[data-content]").map(function (i) {
-        var content = $(this).attr('data-content');
+        var 内容 = $(this).attr('data-content');
         var idnotif = $(this).attr('id-notif');
         var filter = $(this).attr('data-placement');
         var filter = filter.split("-");
@@ -19,9 +19,9 @@
 
                 if (arr !== '') {
                     arr.push([s, top]);
-                    $('body').append('<div id="' + arr[key][0] + '" data-no="' + key + '" class="g-notif g-notif--' + placement + '" style="top:' + arr[key][1] + 'px;">' + content + ' <span class="material-icons close-g-notif close-g-notif' + no + '">close</span></div>');
+                    $('body').append('<div id="' + arr[key][0] + '" data-no="' + key + '" class="g-notif g-notif--' + placement + '" style="top:' + arr[key][1] + 'px;">' + 内容 + ' <span class="material-icons close-g-notif close-g-notif' + no + '">close</span></div>');
                 } else {
-                    $('body').append('<div id="' + idnotif + '0" data-no="' + key + '" class="g-notif g-notif--' + placement + '" style="top:0px;">' + content + ' <span class="material-icons close-g-notif close-g-notif' + no + '">close</span></div>');
+                    $('body').append('<div id="' + idnotif + '0" data-no="' + key + '" class="g-notif g-notif--' + placement + '" style="top:0px;">' + 内容 + ' <span class="material-icons close-g-notif close-g-notif' + no + '">close</span></div>');
                 }
                 var notifTime = setInterval(function () {
                     $('#' + s).fadeOut(1000, function () {
@@ -74,9 +74,9 @@
                 var bottom = 10 * key * 5;
                 if (arr !== '') {
                     arr.push([s, bottom]);
-                    $('body').append('<div id="' + arr[key][0] + '" data-no="' + key + '" class="g-notif g-notif--' + placement + '" style="bottom:' + arr[key][1] + 'px;">' + content + ' <span class="material-icons close-g-notif close-g-notif' + no + '">close</span></div>');
+                    $('body').append('<div id="' + arr[key][0] + '" data-no="' + key + '" class="g-notif g-notif--' + placement + '" style="bottom:' + arr[key][1] + 'px;">' + 内容 + ' <span class="material-icons close-g-notif close-g-notif' + no + '">close</span></div>');
                 } else {
-                    $('body').append('<div id="idnotif0" data-no="' + key + '" class="g-notif g-notif--' + placement + '" style="bottom:0px;">' + content + ' <span class="material-icons close-g-notif close-g-notif' + no + '">close</span></div>');
+                    $('body').append('<div id="idnotif0" data-no="' + key + '" class="g-notif g-notif--' + placement + '" style="bottom:0px;">' + 内容 + ' <span class="material-icons close-g-notif close-g-notif' + no + '">close</span></div>');
                 }
                 var notifTime = setInterval(function () {
                     $('#' + s).fadeOut(1000, function () {
