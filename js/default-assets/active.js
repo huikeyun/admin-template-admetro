@@ -1,20 +1,20 @@
 (function ($) {
     "use strict";
 
-    // :: Variables
-    var admetro_window = $(window);
-    var dd = $("dd");
-    var pageWrapper = $(".admetro-page-wrapper");
-    var sideMenuArea = $(".admetro-sidemenu-area");
+    // :: 变量
+    const admetro_window = $(window);
+    const dd = $("dd");
+    const pageWrapper = $(".admetro-page-wrapper");
+    const sideMenuArea = $(".admetro-sidemenu-area");
 
-    // :: Preloader Active Code
+    // :: 预加载器激活代码
     admetro_window.on("load", function () {
         $("#preloader").fadeOut("1000", function () {
             $(this).remove();
         });
     });
 
-    // :: Slimscroll Active Code
+    // :: slimscroll 激活代码
     if ($.fn.slimscroll) {
         $('#admetroSideNav').slimscroll({
             height: '100%',
@@ -28,7 +28,7 @@
         });
     }
 
-    // :: Slimscroll Active Code
+    // :: slimscroll 激活代码
     if ($.fn.slimscroll) {
         $('#messageBox, #notificationsBox').slimscroll({
             height: '340px',
@@ -42,7 +42,7 @@
         });
     }
 
-    // :: Slimscroll Active Code
+    // :: slimscroll 激活代码
     if ($.fn.slimscroll) {
         $('#notificationsBox2').slimscroll({
             height: '300px',
@@ -56,7 +56,7 @@
         });
     }
 
-    // :: Slimscroll Active Code
+    // :: slimscroll 激活代码
     if ($.fn.slimscroll) {
         $('#dashboardtodoList').slimscroll({
             height: '370px',
@@ -70,7 +70,7 @@
         });
     }
 
-    // :: Slimscroll Active Code
+    // :: slimscroll 激活代码
     if ($.fn.slimscroll) {
         $('#pageVisitorTable').slimscroll({
             height: '300px',
@@ -84,7 +84,7 @@
         });
     }
 
-    // :: Slimscroll Active Code
+    // :: slimscroll 激活代码
     if ($.fn.slimscroll) {
         $('#chooseLayout').slimscroll({
             height: '100%',
@@ -98,7 +98,7 @@
         });
     }
 
-    // :: Menu Active Code
+    // :: 菜单激活代码
     $("#menuCollasped").on("click", function () {
         pageWrapper.toggleClass("menu-collasped-active");
     });
@@ -121,91 +121,92 @@
         $(".choose-layout-area").toggleClass("active");
     });
 
-    // :: Wow Active Code
+    // :: Wow 激活代码
     if (admetro_window.width() > 767) {
         new WOW().init();
     }
 
-    // :: Gallery Active Code
+    // :: Gallery 激活代码
     if ($.fn.imagesLoaded) {
         $('.gallery_full_width_images_area').imagesLoaded(function () {
-            // Filter items on button click
+
+            // 初始化同位素
+            const $grid = $('.gallery_full_width_images_area').isotope({
+                itemSelector: '.portfolio_gallery_iteam',
+                percentPosition: true
+            });
+            // 在按钮点击时筛选项目
             $('.portfolio-menu').on('click', 'button', function () {
-                var filterValue = $(this).attr('data-filter');
+                const filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
                 });
             });
-            // Init Isotope
-            var $grid = $('.gallery_full_width_images_area').isotope({
-                itemSelector: '.portfolio_gallery_iteam',
-                percentPosition: true
-            });
         });
     }
 
-    // :: Gallery Menu Style Code
+    // :: 图库菜单样式代码
     $('.portfolio-menu button.btn').on('click', function () {
         $('.portfolio-menu .btn').removeClass('active');
         $(this).addClass('active');
     })
 
-    // :: Tooltip Active Code
+    // :: Tooltip 激活代码
     if ($.fn.tooltip) {
         $('[data-toggle="tooltip"]').tooltip();
     }
 
-    // :: Popover Active Code
+    // :: Popover 激活代码
     if ($.fn.popover) {
         $('[data-toggle="popover"]').popover();
     }
 
-    // :: FooTable Active Code
+    // :: FooTable 激活代码
     if ($.fn.footable) {
         $(".footable").footable();
     }
 
-    // :: Nice Select Active Code
+    // :: Nice Select 激活代码
     if ($.fn.niceSelect) {
         $('select').niceSelect();
     }
 
-    // :: Dropdown Active Code
+    // :: Dropdown 激活代码
     if ($.fn.dropdown) {
         $("dropdown-toggle").dropdown();
     }
 
-    // :: Compose Mail Active Code
+    // :: Compose Mail 激活代码
     if ($.fn.wysihtml5) {
         $("#compose-textarea").wysihtml5();
     }
 
-    // :: Jarallax Active Code
+    // :: Jarallax 激活代码
     if ($.fn.jarallax) {
         $('.jarallax').jarallax({
             speed: 0.2
         });
     }
 
-    // :: Accordian Active Code
+    // :: 手风琴 激活代码
     dd.filter(":nth-child(n+3)").hide();
     $("dl").on("click", "dt", function () {
         $(this).next().slideDown(500).siblings("dd").slideUp(500);
     });
 
-    // :: PreventDefault a Click
+    // :: 防止默认点击
     $('a[href="#"]').on("click", function ($) {
         $.preventDefault();
     });
 
-    // :: Countdown Active Code
+    // :: 倒计时 激活代码
     if ($.fn.countdown) {
-        $("#clock").countdown("2021/12/24", function (event) {
-            $(this).html(event.strftime("<div>%D <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
+        $("#clock").countdown("2029/12/24", function (event) {
+            $(this).html(event.strftime("<div>%D <span>天</span></div> <div>%H <span>小时</span></div> <div>%M <span>分</span></div> <div>%S <span>秒</span></div>"));
         });
     }
 
-    // :: Timeline Active Code
+    // :: 时间线 激活代码
     $('#leftVersion').on('click', function (event) {
         event.preventDefault();
         $('#vertical-timeline').toggleClass('center-orientation');
