@@ -1,89 +1,89 @@
 (function ($) {
     'use strict';
-    
-    var today = new Date();
-    var y = today.getFullYear();
-    var m = today.getMonth();
-    var d = today.getDate();
 
-    var eventList = [{
-            title: 'All Day Event',
-            start: new Date(y, m, d - 12),
-            backgroundColor: 'rgba(88, 103, 221, 0.8)'
+    const today = new Date();
+    const y = today.getFullYear();
+    const m = today.getMonth();
+    const d = today.getDate();
 
-  },
+    const eventList = [{
+        title: '全天的活动',
+        start: new Date(y, m, d - 12),
+        backgroundColor: 'rgba(88, 103, 221, 0.8)'
+
+    },
         {
-            title: 'Long Event',
+            title: '长期事件',
             start: new Date(y, m, d - 8),
             end: new Date(y, m, d - 5),
             className: 'fc-event-warning',
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
             id: 999,
-            title: 'Repeating Event',
+            title: '重复事件',
             start: new Date(y, m, d - 6, 16, 0),
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
             id: 999,
-            title: 'Repeating Event',
+            title: '重复事件',
             start: new Date(y, m, d + 1, 16, 0),
             className: 'fc-event-success',
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
-            title: 'Conference',
+            title: '发布会',
             start: new Date(y, m, d - 4),
             end: new Date(y, m, d - 2),
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
-            title: 'Meeting',
+            title: '会议',
             start: new Date(y, m, d - 3, 10, 30),
             end: new Date(y, m, d - 3, 12, 30),
             className: 'fc-event-danger'
-  },
+        },
         {
             title: '午饭',
             start: new Date(y, m, d - 3, 12, 0),
             className: 'fc-event-info',
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
-            title: 'Meeting',
+            title: '会议',
             start: new Date(y, m, d - 3, 14, 30),
             className: 'fc-event-dark',
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
-            title: 'Happy Hour',
+            title: '欢乐时光',
             start: new Date(y, m, d - 3, 17, 30),
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
-            title: 'Dinner',
+            title: '晚餐',
             start: new Date(y, m, d - 3, 20, 0),
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
-            title: 'Birthday Party',
+            title: '生日聚会',
             start: new Date(y, m, d - 2, 7, 0),
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
-            title: 'Background event',
+            title: '后台事件',
             start: new Date(y, m, d + 5),
             end: new Date(y, m, d + 7),
             rendering: 'background',
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  },
+        },
         {
-            title: 'Click for Google',
+            title: '点击跳转到谷歌',
             url: 'http://google.com/',
             start: new Date(y, m, d + 13),
             backgroundColor: 'rgba(88, 103, 221, 0.8)'
-  }];
+        }];
 
     // Default view
     $('#fullcalendar-default-view').fullCalendar({
@@ -130,16 +130,16 @@
                 })
                 .on('submit', function (e) {
                     e.preventDefault();
-                    var title = $(this).find('input[type="text"]').val();
-                    var className = $(this).find('select').val() || null;
+                    const title = $(this).find('input[type="text"]').val();
+                    const className = $(this).find('select').val() || null;
 
                     if (title) {
-                        var eventData = {
+                        const eventData = {
                             title: title,
                             start: start,
                             end: end,
                             className: className
-                        }
+                        };
                         $('#fullcalendar-default-view').fullCalendar('renderEvent', eventData, true);
                     }
 
@@ -185,5 +185,5 @@
         eventLimit: true,
         events: eventList
     });
-    
+
 })(jQuery);
