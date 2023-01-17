@@ -9,77 +9,77 @@
         },
         color: ["#007bff", "#17a2b8"],
         legend: {
-            data: ['Evaporation', 'Precipitation']
+            data: ['基础栏目数据1', '基础栏目数据2']
         },
         calculable: true,
         xAxis: [
             {
                 type: 'category',
-                data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-                }
-            ],
+                data: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+            }
+        ],
         yAxis: [
             {
                 type: 'value'
-                }
-            ],
+            }
+        ],
         series: [
             {
-                name: 'Evaporation',
+                name: '基础栏目数据1',
                 type: 'bar',
-                data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                data: [2.0, 24.9, 71.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 16.4, 133.3],
                 markPoint: {
                     data: [
                         {
                             type: 'max',
-                            name: 'The maximum value'
-                    },
+                            name: '最大值'
+                        },
                         {
                             type: 'min',
-                            name: 'Minimum value'
-                    }
-                        ]
+                            name: '最小值'
+                        }
+                    ]
                 },
                 markLine: {
                     data: [
                         {
                             type: 'average',
-                            name: 'average value'
-                    }
-                        ]
+                            name: '平均值'
+                        }
+                    ]
                 }
-                },
+            },
             {
-                name: 'Precipitation',
+                name: '基础栏目数据2',
                 type: 'bar',
                 data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
                 markPoint: {
                     data: [
                         {
-                            name: 'The highest year',
+                            name: '最高年份',
                             value: 182.2,
                             xAxis: 7,
                             yAxis: 183,
                             symbolSize: 18
-                    },
+                        },
                         {
-                            name: 'Year minimum',
+                            name: '最低年份',
                             value: 2.3,
                             xAxis: 11,
                             yAxis: 3
-                    }
-                        ]
+                        }
+                    ]
                 },
                 markLine: {
                     data: [
                         {
                             type: 'average',
                             name: 'average value'
-                    }
-                        ]
+                        }
+                    ]
                 }
-                }
-            ]
+            }
+        ]
     };
 
     // Load data into the ECharts instance 
@@ -102,10 +102,10 @@
 
     // use
     require(
-    [
-        'echarts',
-        'echarts/chart/bar'
-    ],
+        [
+            'echarts',
+            'echarts/chart/bar'
+        ],
         function (ec) {
             // Initialize after dom ready
             var myChart = ec.init(document.getElementById('main'));
@@ -122,20 +122,20 @@
                     {
                         type: 'category',
                         data: ["Shirts", "Sweaters", "Chiffon Shirts", "Pants", "High Heels", "Socks"]
-                }
-            ],
+                    }
+                ],
                 yAxis: [
                     {
                         type: 'value'
-                }
-            ],
+                    }
+                ],
                 series: [
                     {
                         "name": "Sales",
                         "type": "bar",
                         "data": [5, 20, 40, 10, 10, 20]
-                }
-            ]
+                    }
+                ]
             };
 
             // Load data into the ECharts instance 
@@ -183,13 +183,13 @@
                     }
                     return list;
                 }()
-        }
-    ],
+            }
+        ],
         yAxis: [
             {
                 type: 'value'
-        }
-    ],
+            }
+        ],
         series: [
             {
                 name: 'Auxiliary',
@@ -206,7 +206,7 @@
                     }
                 },
                 data: [0, 900, 1245, 1530, 1478, 1376, 1511, 1689, 1856, 1495, 1292]
-        },
+            },
             {
                 name: 'income',
                 type: 'bar',
@@ -220,7 +220,7 @@
                     }
                 },
                 data: [900, 345, 393, '-', '-', 135, 178, 286, '-', '-', '-']
-        },
+            },
             {
                 name: 'expenditure',
                 type: 'bar',
@@ -234,8 +234,8 @@
                     }
                 },
                 data: ['-', '-', '-', 108, 154, '-', '-', '-', 119, 361, 203]
-        }
-    ]
+            }
+        ]
     };
 
     // Load data into the ECharts instance 
@@ -269,37 +269,37 @@
             {
                 type: 'category',
                 data: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-        }
-    ],
+            }
+        ],
         yAxis: [
             {
                 type: 'value'
-        }
-    ],
+            }
+        ],
         series: [
             {
                 name: 'direct interview',
                 type: 'bar',
                 data: [320, 332, 301, 334, 390, 330, 320]
-        },
+            },
             {
                 name: 'Mail marketing',
                 type: 'bar',
                 stack: 'advertising',
                 data: [120, 132, 101, 134, 90, 230, 210]
-        },
+            },
             {
                 name: 'Affiliate advertising',
                 type: 'bar',
                 stack: 'advertising',
                 data: [220, 182, 191, 234, 290, 330, 310]
-        },
+            },
             {
                 name: 'Video ad',
                 type: 'bar',
                 stack: 'advertising',
                 data: [150, 232, 201, 154, 190, 330, 410]
-        },
+            },
             {
                 name: 'search engine',
                 type: 'bar',
@@ -313,40 +313,40 @@
                         }
                     },
                     data: [
-                    [{
+                        [{
                             type: 'min'
-                    }, {
+                        }, {
                             type: 'max'
-                    }]
-                ]
+                        }]
+                    ]
                 }
-        },
+            },
             {
                 name: 'Baidu',
                 type: 'bar',
                 barWidth: 5,
                 stack: 'search engine',
                 data: [620, 732, 701, 734, 1090, 1130, 1120]
-        },
+            },
             {
                 name: 'Google',
                 type: 'bar',
                 stack: 'search engine',
                 data: [120, 132, 101, 134, 290, 230, 220]
-        },
+            },
             {
                 name: 'must',
                 type: 'bar',
                 stack: 'search engine',
                 data: [60, 72, 71, 74, 190, 130, 110]
-        },
+            },
             {
                 name: 'other',
                 type: 'bar',
                 stack: 'search engine',
                 data: [62, 82, 91, 84, 109, 110, 120]
-        }
-    ]
+            }
+        ]
     };
 
     // Load data into the ECharts instance 
