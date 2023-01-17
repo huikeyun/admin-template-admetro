@@ -29,11 +29,11 @@ function initMap() {
             zoom: MapZoom,
             center: MapLocation
         });
-        const iconBase = '';
+        const 图标Base = '';
         const marker_2 = new google.maps.Marker({
             position: MapLocation,
             map: CustomMarker,
-            icon: iconBase + ''
+            图标: 图标Base + ''
         });
     }
 

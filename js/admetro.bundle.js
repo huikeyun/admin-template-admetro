@@ -209,7 +209,7 @@ x();"bottom"===a.start?(c.css({top:b.outerHeight()-c.outerHeight()}),n(0,!0)):"t
                 classyMenu.toggleClass('menu-on');
             });
 
-            // close icon
+            // close 图标
             closeIcon.on('click', function () {
                 classyMenu.removeClass('menu-on');
                 navToggler.removeClass('active');

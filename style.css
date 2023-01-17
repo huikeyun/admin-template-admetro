@@ -16,12 +16,12 @@ Version: v1.0
         + Animate CSS
         + Nice Select CSS
         + jQuery UI CSS
-    * Include Web Icon Fonts
+    * Include Web 图标 Fonts
         + Themify 图标
         + Font Awesome
         + Pe 7 Stroke
         + Elegant 图标
-        + Material Design Iconic Font
+        + Material Design 图标字体
         + Etline
     * Template Mixins
         + Flex Mixins
@@ -45,7 +45,7 @@ Version: v1.0
         + Buttons
         + Fill Button
         + Gradients Button
-        + Icon Button
+        + 图标 Button
         + Notifications
         + Typography
         + Dragula
@@ -2216,7 +2216,7 @@ button.btn-primary.dim {
     background-image: -o-linear-gradient(left, #7c5ac2 0%, #816cfd 100%);
     background-image: linear-gradient(to right, #7c5ac2 0%, #816cfd 100%);
 }
-/* :: Icon Button CSS */
+/* :: 图标 Button CSS */
 .ladda-button {
     overflow: hidden;
 }

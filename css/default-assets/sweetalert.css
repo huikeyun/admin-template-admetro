@@ -729,14 +729,14 @@ body.stop-scrolling {
 /* IE浏览器 9 has some special quirks that are fixed here */
 /* The 图标 are not animated. */
 /* This file is automatically merged into sweet-alert.min.js through Gulp */
-/* Error icon */
+/* Error 图标 */
 .sweet-alert .sa-icon.sa-error .sa-line.sa-left {
   -ms-transform: rotate(45deg) \9; }
 
 .sweet-alert .sa-icon.sa-error .sa-line.sa-right {
   -ms-transform: rotate(-45deg) \9; }
 
-/* Success icon */
+/* Success 图标 */
 .sweet-alert .sa-icon.sa-success {
   border-color: transparent\9; }
 
