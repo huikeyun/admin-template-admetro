@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/default-assets/contextMenu.min.css">
     <!-- 主样式表 [如果你删除这个 CSS 文件，你的文件无疑会被破坏。] -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/jquery-contextmenu/2.9.2/jquery.contextMenu.min.css">
 </head>
 <body>
 <!-- 预加载器 -->
@@ -108,7 +109,7 @@
                                 <a href="clipboard.html">剪贴板</a>
                             </li>
                             <li class="active">
-                                <a href="context-menu.html">Context Menu</a>
+                                <a href="context-menu.html">右键菜单</a>
                             </li>
                         </ul>
                     </li>
@@ -561,15 +562,15 @@
         </header>
         <!-- 主要内容区 -->
         <div class="main-content">
-            <!-- Context menu区域开始 -->
+            <!-- 右键菜单区域开始 -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
                         <div class="card bg-boxshadow mb-30">
                             <div class="card-body">
-                                <h4 class="card-title mb-30">A simple context menu</h4>
+                                <h4 class="card-title mb-30">一个简单的右键菜单</h4>
                                 <div class="context-menu-content">
-                                    <div class="testButton" id="testButton1">Click me</div>
+                                    <div class="testButton" id="context-menu-1">右键我</div>
                                 </div>
                             </div>
                         </div>
@@ -577,49 +578,9 @@
                     <div class="col-12">
                         <div class="card bg-boxshadow mb-30">
                             <div class="card-body">
-                                <h4 class="card-title mb-30">A simple Sub menus</h4>
+                                <h4 class="card-title mb-30">一个简单的子菜单</h4>
                                 <div class="context-menu-content">
-                                    <div class="testButton2" id="testButton2">Click me</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card bg-boxshadow mb-30">
-                            <div class="card-body">
-                                <h4 class="card-title mb-30">A simple context menu</h4>
-                                <div class="context-menu-content">
-                                    <div class="testButton" id="testButton22">Click me</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card bg-boxshadow mb-30">
-                            <div class="card-body">
-                                <h4 class="card-title mb-30">A simple context menu</h4>
-                                <div class="context-menu-content">
-                                    <div class="testButton" id="testButton24">Click me</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card bg-boxshadow mb-30">
-                            <div class="card-body">
-                                <h4 class="card-title mb-30">A simple Sub menus</h4>
-                                <div class="context-menu-content">
-                                    <div class="testButton2" id="testButton36">Click me</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card bg-boxshadow mb-30">
-                            <div class="card-body">
-                                <h4 class="card-title mb-30">A simple context menu</h4>
-                                <div class="context-menu-content">
-                                    <div class="testButton" id="testButton63">Click me</div>
+                                    <div class="testButton" id="context-menu-2">右键我</div>
                                 </div>
                             </div>
                         </div>
@@ -659,7 +620,8 @@
 <script src="https://cdn.staticfile.org/bootstrap/4.6.2/js/bootstrap.min.js"></script>
 <script src="js/admetro.bundle.js"></script>
 <!-- 这些插件只需要运行这个页面 -->
-<script src="js/default-assets/context-menu.js"></script>
+<script src="https://cdn.staticfile.org/jquery-contextmenu/2.9.2/jquery.contextMenu.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery-contextmenu/2.9.2/jquery.ui.position.min.js"></script>
 <script src="js/default-assets/context-menu-custom.js"></script>
 <!-- 激活JS -->
 <script src="js/default-assets/active.js"></script>

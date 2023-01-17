@@ -1,102 +1,56 @@
 (function ($) {
     "use strict";
-    var menu = [{
-        name: 'create',
-        img: 'img/core-img/1.png',
-        title: 'create button',
-        fun: function () {
-            alert('i am add button')
-        }
-        }, {
-        name: 'update',
-        img: 'img/core-img/2.png',
-        title: 'update button',
-        fun: function () {
-            alert('i am update button')
-        }
-        }, {
-        name: 'delete',
-        img: 'img/core-img/3.png',
-        title: 'delete button',
-        fun: function () {
-            alert('i am delete button')
-        }
-        }];
 
-    //Calling context menu
-    $('.testButton').contextMenu(menu);
-
-    var menu = [{
-        name: 'create',
-        img: 'img/core-img/1.png',
-        title: 'create button',
-        fun: function () {
-            alert('i am add button')
-        }
-    }, {
-        name: 'update',
-        img: 'img/core-img/2.png',
-        title: 'update button',
-        subMenu: [{
-            name: 'merge',
-            title: 'It will merge row',
-            img: 'img/core-img/1.png',
-            fun: function () {
-                alert('It will merge row')
-            }
-        }, {
-            name: 'replace',
-            title: 'It will replace row',
-            img: 'img/core-img/3.png',
-            subMenu: [{
-                name: 'replace top 100',
-                img: 'img/core-img/2.png',
-                fun: function () {
-                    alert('It will replace top 100 rows');
+    $.contextMenu({
+        selector: '#context-menu-1',
+        callback: function (key, options) {
+            const m = "点击了: " + key;
+           /* window.console && console.log(m) || alert(m);*/
+        },
+        items: {
+            "编辑": {name: "编辑", icon: "fa-edit", accesskey: "e"},
+            "剪切": {name: "剪切", icon: "fa-beer", accesskey: "c"},
+            "复制": {name: "复制", icon: "copy"},
+            "粘贴": {name: "粘贴", icon: "paste"},
+            "删除": {name: "删除", icon: "delete"},
+            "分割线": "---------",
+            "退出": {
+                name: "退出", icon: function () {
+                    return 'context-menu-icon context-menu-icon-quit';
                 }
+            }
+        }
+    });
 
-            }, {
-                name: 'replace all',
-                img: 'img/core-img/2.png',
-                fun: function () {
-                    alert('It will replace all rows');
+    $.contextMenu({
+        selector: '#context-menu-2',
+        callback: function (key, options) {
+            const m = "点击了: " + key;
+            window.console && console.log(m) || alert(m);
+        },
+        items: {
+            "编辑": {name: "编辑", icon: "fa-edit", accesskey: "e"},
+            "剪切": {name: "剪切", icon: "fa-beer", accesskey: "c"},
+            "复制": {name: "复制", icon: "copy"},
+            "粘贴": {name: "粘贴", icon: "paste"},
+            "删除": {name: "删除", icon: "delete"},
+            "分割线1": "---------",
+            "退出": {
+                name: "退出", icon: function () {
+                    return 'context-menu-icon context-menu-icon-quit';
                 }
-            }]
-        }]
-    }, {
-        name: 'delete',
-        img: 'img/core-img/1.png',
-        title: 'delete button',
-        subMenu: [{
-            'name': 'soft delete',
-            img: 'img/core-img/2.png',
-            fun: function () {
-                alert('You can recover back');
+            },
+            "分割线2": "---------",
+            "子菜单": {
+                name: "子菜单",
+                items: {
+                    "子菜单1": { name: "子菜单1"},
+                    "子菜单2": { name: "子菜单2"},
+                    "子菜单3": { name: "子菜单3" },
+                }
             }
-        }, {
-            'name': 'hard delete',
-            img: 'img/core-img/3.png',
-            fun: function () {
-                alert('It will delete permanently');
-            }
-        }]
-
-    }];
-
-    //Calling context menu
-    $('.testButton2').contextMenu(menu);
-
-
-    $('.validate').each(function () {
-        elm = $(this);
-        elm.contextMenu(elm.siblings('.valTip'), {
-            'triggerOn': 'focusin',
-            'displayAround': 'trigger'
-        });
-
+        }
     });
-    $('.validate').focusout(function (e) {
-        $(this).siblings('.valTip').css('display', 'none');
-    });
+
 
 })(jQuery);
