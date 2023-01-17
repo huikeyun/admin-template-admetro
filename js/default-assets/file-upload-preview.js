@@ -64,7 +64,7 @@ var FileUploadWithPreview = function () {
                 var selectedFilesCount = this.files.length;
 
                 //In this case, the user most likely had hit cancel - which does something
-                //a little strange if they had already selected a single or multiple images -
+                //a little strange if they had already selected a 单个or multiple images -
                 //it acts like they now have *no* files - which isn't true. We'll just check here
                 //for any cached images already captured, and proceed normally. If something *does* want
                 //to clear their images, they'll use the clear button on the label we provide.
@@ -96,7 +96,7 @@ var FileUploadWithPreview = function () {
                             return;
                         }
 
-                        //A single file was selected...
+                        //A 单个file was selected...
                         self.inputLabel.innerHTML = file.name;
 
                         //If png or jpg/jpeg, use the actual image

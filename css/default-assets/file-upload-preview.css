@@ -48,7 +48,7 @@
 
 .custom-file-container__custom-file__custom-file-control:empty::after {
     box-sizing: border-box;
-    content: "Choose file...";
+    content: "选择文件...";
 }
 
 .custom-file-container__custom-file__custom-file-control::before {
