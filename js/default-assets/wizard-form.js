@@ -1,16 +1,26 @@
 (function ($) {
     'use strict';
 
-    var form = $("#example-form");
+    const form = $("#example-form");
     form.children("div").steps({
         headerTag: "h3",
         bodyTag: "section",
         transitionEffect: "slideLeft",
+        enableKeyNavigation:true,
         onFinished: function (event, currentIndex) {
-            alert("Submitted!");
+            alert("已提交！");
+        },
+        labels: {
+            cancel: "取消",
+            current: "当前步骤：",
+            pagination: "分页",
+            finish: "完成",
+            next: "下一步",
+            previous: "上一步",
+            loading: "加载中 ..."
         }
     });
-    var validationForm = $("#example-validation-form");
+    const validationForm = $("#example-validation-form");
     validationForm.val({
         errorPlacement: function errorPlacement(error, element) {
             element.before(error);
@@ -38,17 +48,26 @@
             return validationForm.val();
         },
         onFinished: function (event, currentIndex) {
-            alert("Submitted!");
+            alert("已提交！");
         }
     });
-    var verticalForm = $("#example-vertical-wizard");
+    const verticalForm = $("#example-vertical-wizard");
     verticalForm.children("div").steps({
         headerTag: "h3",
         bodyTag: "section",
-        transitionEffect: "slideLeft",
+        transitionEffect: "fade",
         stepsOrientation: "vertical",
         onFinished: function (event, currentIndex) {
-            alert("Submitted!");
+            alert("已提交！");
+        },
+        labels: {
+            cancel: "取消",
+            current: "当前步骤：",
+            pagination: "分页",
+            finish: "完成",
+            next: "下一步",
+            previous: "上一步",
+            loading: "加载中 ..."
         }
     });
 
