@@ -3,7 +3,7 @@
     
     // :: Notify Message 激活代码
     function notify(message, type) {
-        $.growl({
+        $.notify({
             message: message
         }, {
             type: type,
@@ -24,7 +24,7 @@
                 y: 80
             }
         });
-    };
-    notify('Hi, Welcomeback! - Admetro Dashboard', 'inverse');
+    }
+    notify('您好，欢迎回来！ - Admetro 仪表板', 'inverse');
     
 })(jQuery);
