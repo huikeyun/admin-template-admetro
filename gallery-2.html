@@ -270,14 +270,14 @@
                         </ul>
                     </li>
                     <li class="treeview active">
-                        <a href="javascript:void(0)"><i class="ti-gallery"></i> <span>Gallery</span>
+                        <a href="javascript:void(0)"><i class="ti-gallery"></i> <span>图库</span>
                             <i class="fa fa-angle-right"></i></a>
                         <ul class="treeview-menu">
-                            <li>
-                                <a href="gallery-1.html">Gallery-1</a>
-                            </li>
                             <li class="active">
-                                <a href="gallery-2.html">Gallery-2</a>
+                                <a href="gallery-1.html">基础图库</a>
+                            </li>
+                            <li>
+                                <a href="gallery-2.html">带筛选功能图库</a>
                             </li>
                         </ul>
                     </li>
@@ -564,88 +564,103 @@
                     <div class="col-12">
                         <div class="card bg-boxshadow mb-30">
                             <div class="card-body">
-                                <div class="gallery_full_width_images__area clearfix">
-                                    <!-- Gallery 内容 -->
-                                    <div class="gallery--single-content">
-                                        <div class="gallery--image">
-                                            <img src="img/bg-img/gallery-1.jpg" alt="">
-                                        </div>
-                                        <div class="gallery_service_text">
-                                            <h3>Historical Bridge</h3>
-                                            <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
-                                            <div class="image-popups">
-                                                <a href="img/bg-img/gallery-1.jpg" data-effect="mfp-zoom-in"></a>
+                                <!-- 图库菜单 -->
+                                <div class="gallery_menu mb-15">
+                                    <div class="portfolio-menu text-center">
+                                        <button class="btn masonary-btn active" type="button" data-filter="*">全部</button>
+                                        <button class="btn masonary-btn" type="button" data-filter=".项目1">项目1</button>
+                                        <button class="btn masonary-btn" type="button" data-filter=".项目2">项目2</button>
+                                        <button class="btn masonary-btn" type="button" data-filter=".项目3">项目3</button>
+                                        <button class="btn masonary-btn" type="button" data-filter=".项目4">项目4</button>
+                                    </div>
+                                </div>
+                                <div class="gallery_full_width_images_area clearfix">
+                                    <!-- 单个图库项目-->
+                                    <div class="项目1 项目3 portfolio_gallery_iteam">
+                                        <img src="img/gallery-img/2.jpg" alt="">
+                                        <!-- 悬停内容-->
+                                        <div class="hover_gallery_content">
+                                            <!-- 项目名称-->
+                                            <div class="project_title">
+                                                <h5 class="mb-0">项目1 项目3</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Gallery 内容 -->
-                                    <div class="gallery--single-content">
-                                        <div class="gallery--image">
-                                            <img src="img/bg-img/gallery-2.jpg" alt="">
-                                        </div>
-                                        <div class="gallery_service_text">
-                                            <h3>Historical Bridge</h3>
-                                            <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <!-- Gallery 内容 -->
-                                    <div class="gallery--single-content">
-                                        <div class="gallery--image">
-                                            <img src="img/bg-img/gallery-3.jpg" alt="">
-                                        </div>
-                                        <div class="gallery_service_text">
-                                            <h3>Historical Bridge</h3>
-                                            <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    <!-- 单个图库项目-->
+                                    <div class="项目2 项目3 portfolio_gallery_iteam">
+                                        <img src="img/gallery-img/3.jpg" alt="">
+                                        <!-- 悬停内容-->
+                                        <div class="hover_gallery_content">
+                                            <!-- 项目名称-->
+                                            <div class="project_title">
+                                                <h5 class="mb-0">项目2 项目3</h5>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Gallery 内容 -->
-                                    <div class="gallery--single-content">
-                                        <div class="gallery--image">
-                                            <img src="img/bg-img/gallery-4.jpg" alt="">
-                                        </div>
-                                        <div class="gallery_service_text">
-                                            <h3>Historical Bridge</h3>
-                                            <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <!-- Gallery 内容 -->
-                                    <div class="gallery--single-content">
-                                        <div class="gallery--image">
-                                            <img src="img/bg-img/gallery-5.jpg" alt="">
-                                        </div>
-                                        <div class="gallery_service_text">
-                                            <h3>Historical Bridge</h3>
-                                            <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    <!-- 单个图库项目-->
+                                    <div class="项目4 项目3 项目1 portfolio_gallery_iteam">
+                                        <img src="img/gallery-img/4.jpg" alt="">
+                                        <!-- 悬停内容-->
+                                        <div class="hover_gallery_content">
+                                            <!-- 项目名称-->
+                                            <div class="project_title">
+                                                <h5 class="mb-0">项目4 项目3 项目1</h5>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Gallery 内容 -->
-                                    <div class="gallery--single-content">
-                                        <div class="gallery--image">
-                                            <img src="img/bg-img/gallery-6.jpg" alt="">
-                                        </div>
-                                        <div class="gallery_service_text">
-                                            <h3>Historical Bridge</h3>
-                                            <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <!-- Gallery 内容 -->
-                                    <div class="gallery--single-content">
-                                        <div class="gallery--image">
-                                            <img src="img/bg-img/gallery-5.jpg" alt="">
-                                        </div>
-                                        <div class="gallery_service_text">
-                                            <h3>Historical Bridge</h3>
-                                            <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    <!-- 单个图库项目-->
+                                    <div class="项目4 项目3 项目2 portfolio_gallery_iteam">
+                                        <img src="img/gallery-img/2.jpg" alt="">
+                                        <!-- 悬停内容-->
+                                        <div class="hover_gallery_content">
+                                            <!-- 项目名称-->
+                                            <div class="project_title">
+                                                <h5 class="mb-0">项目4 项目3 项目2</h5>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Gallery 内容 -->
-                                    <div class="gallery--single-content">
-                                        <div class="gallery--image">
-                                            <img src="img/bg-img/gallery-3.jpg" alt="">
+                                    <!-- 单个图库项目-->
+                                    <div class="项目4 项目2 项目1 项目3 portfolio_gallery_iteam">
+                                        <img src="img/gallery-img/5.jpg" alt="">
+                                        <!-- 悬停内容-->
+                                        <div class="hover_gallery_content">
+                                            <!-- 项目名称-->
+                                            <div class="project_title">
+                                                <h5 class="mb-0">项目4 项目2 项目1 项目3</h5>
+                                            </div>
                                         </div>
-                                        <div class="gallery_service_text">
-                                            <h3>Historical Bridge</h3>
-                                            <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                    <!-- 单个图库项目-->
+                                    <div class="项目4 项目3 portfolio_gallery_iteam">
+                                        <img src="img/gallery-img/3.jpg" alt="">
+                                        <!-- 悬停内容-->
+                                        <div class="hover_gallery_content">
+                                            <!-- 项目名称-->
+                                            <div class="project_title">
+                                                <h5 class="mb-0">项目4 项目3</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 单个图库项目-->
+                                    <div class="项目4 项目3 项目1 portfolio_gallery_iteam">
+                                        <img src="img/gallery-img/2.jpg" alt="">
+                                        <!-- 悬停内容-->
+                                        <div class="hover_gallery_content">
+                                            <!-- 项目名称-->
+                                            <div class="project_title">
+                                                <h5 class="mb-0">项目4 项目3 项目1</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 单个图库项目-->
+                                    <div class="项目4 项目2 项目1 项目3 portfolio_gallery_iteam">
+                                        <img src="img/gallery-img/5.jpg" alt="">
+                                        <!-- 悬停内容-->
+                                        <div class="hover_gallery_content">
+                                            <!-- 项目名称-->
+                                            <div class="project_title">
+                                                <h5 class="mb-0">项目4 项目2 项目1 项目3</h5>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -655,93 +670,88 @@
                     <div class="col-12">
                         <div class="card bg-boxshadow mb-30">
                             <div class="card-body">
-                                <div class="gallery_full_width_images_area clearfix">
-                                    <!-- 单个gallery Item -->
-                                    <div class="room bui portfolio_gallery_iteam">
-                                        <img src="img/gallery-img/2.jpg" alt="">
-                                        <!-- Hover Content-->
-                                        <div class="hover_gallery_content">
-                                            <!-- Project Title-->
-                                            <div class="project_title">
-                                                <h5 class="mb-0">Living Room Staircases</h5>
+                                <div class="gallery_full_width_images__area clearfix">
+                                    <!-- 图库 内容 -->
+                                    <div class="gallery--single-content">
+                                        <div class="gallery--image">
+                                            <img src="img/bg-img/gallery-1.jpg" alt="">
+                                        </div>
+                                        <div class="gallery_service_text">
+                                            <h3>历史的桥梁</h3>
+                                            <a href="#">阅读更多<i class="fa fa-angle-double-right"></i></a>
+                                            <div class="image-popups">
+                                                <a href="img/bg-img/gallery-1.jpg" data-effect="mfp-zoom-in"></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- 单个gallery Item -->
-                                    <div class="kit bui portfolio_gallery_iteam">
-                                        <img src="img/gallery-img/3.jpg" alt="">
-                                        <!-- Hover Content-->
-                                        <div class="hover_gallery_content">
-                                            <!-- Project Title-->
-                                            <div class="project_title">
-                                                <h5 class="mb-0">Living Room Staircases</h5>
-                                            </div>
+                                    <!-- 图库 内容 -->
+                                    <div class="gallery--single-content">
+                                        <div class="gallery--image">
+                                            <img src="img/bg-img/gallery-2.jpg" alt="">
+                                        </div>
+                                        <div class="gallery_service_text">
+                                            <h3>历史的桥梁</h3>
+                                            <a href="#">阅读更多<i class="fa fa-angle-double-right"></i></a>
                                         </div>
                                     </div>
-                                    <!-- 单个gallery Item -->
-                                    <div class="oth bui room portfolio_gallery_iteam">
-                                        <img src="img/gallery-img/4.jpg" alt="">
-                                        <!-- Hover Content-->
-                                        <div class="hover_gallery_content">
-                                            <!-- Project Title-->
-                                            <div class="project_title">
-                                                <h5 class="mb-0">Living Room Staircases</h5>
-                                            </div>
+                                    <!-- 图库 内容 -->
+                                    <div class="gallery--single-content">
+                                        <div class="gallery--image">
+                                            <img src="img/bg-img/gallery-3.jpg" alt="">
+                                        </div>
+                                        <div class="gallery_service_text">
+                                            <h3>历史的桥梁</h3>
+                                            <a href="#">阅读更多<i class="fa fa-angle-double-right"></i></a>
                                         </div>
                                     </div>
-                                    <!-- 单个gallery Item -->
-                                    <div class="oth bui kit portfolio_gallery_iteam">
-                                        <img src="img/gallery-img/2.jpg" alt="">
-                                        <!-- Hover Content-->
-                                        <div class="hover_gallery_content">
-                                            <!-- Project Title-->
-                                            <div class="project_title">
-                                                <h5 class="mb-0">Living Room Staircases</h5>
-                                            </div>
+                                    <!-- 图库 内容 -->
+                                    <div class="gallery--single-content">
+                                        <div class="gallery--image">
+                                            <img src="img/bg-img/gallery-4.jpg" alt="">
+                                        </div>
+                                        <div class="gallery_service_text">
+                                            <h3>历史的桥梁</h3>
+                                            <a href="#">阅读更多<i class="fa fa-angle-double-right"></i></a>
                                         </div>
                                     </div>
-                                    <!-- 单个gallery Item -->
-                                    <div class="oth kit room bui portfolio_gallery_iteam">
-                                        <img src="img/gallery-img/5.jpg" alt="">
-                                        <!-- Hover Content-->
-                                        <div class="hover_gallery_content">
-                                            <!-- Project Title-->
-                                            <div class="project_title">
-                                                <h5 class="mb-0">Living Room Staircases</h5>
-                                            </div>
+                                    <!-- 图库 内容 -->
+                                    <div class="gallery--single-content">
+                                        <div class="gallery--image">
+                                            <img src="img/bg-img/gallery-5.jpg" alt="">
+                                        </div>
+                                        <div class="gallery_service_text">
+                                            <h3>历史的桥梁</h3>
+                                            <a href="#">阅读更多<i class="fa fa-angle-double-right"></i></a>
                                         </div>
                                     </div>
-                                    <!-- 单个gallery Item -->
-                                    <div class="oth bui portfolio_gallery_iteam">
-                                        <img src="img/gallery-img/3.jpg" alt="">
-                                        <!-- Hover Content-->
-                                        <div class="hover_gallery_content">
-                                            <!-- Project Title-->
-                                            <div class="project_title">
-                                                <h5 class="mb-0">Living Room Staircases</h5>
-                                            </div>
+                                    <!-- 图库 内容 -->
+                                    <div class="gallery--single-content">
+                                        <div class="gallery--image">
+                                            <img src="img/bg-img/gallery-6.jpg" alt="">
+                                        </div>
+                                        <div class="gallery_service_text">
+                                            <h3>历史的桥梁</h3>
+                                            <a href="#">阅读更多<i class="fa fa-angle-double-right"></i></a>
                                         </div>
                                     </div>
-                                    <!-- 单个gallery Item -->
-                                    <div class="oth bui room portfolio_gallery_iteam">
-                                        <img src="img/gallery-img/2.jpg" alt="">
-                                        <!-- Hover Content-->
-                                        <div class="hover_gallery_content">
-                                            <!-- Project Title-->
-                                            <div class="project_title">
-                                                <h5 class="mb-0">Living Room Staircases</h5>
-                                            </div>
+                                    <!-- 图库 内容 -->
+                                    <div class="gallery--single-content">
+                                        <div class="gallery--image">
+                                            <img src="img/bg-img/gallery-5.jpg" alt="">
+                                        </div>
+                                        <div class="gallery_service_text">
+                                            <h3>历史的桥梁</h3>
+                                            <a href="#">阅读更多<i class="fa fa-angle-double-right"></i></a>
                                         </div>
                                     </div>
-                                    <!-- 单个gallery Item -->
-                                    <div class="oth kit room bui portfolio_gallery_iteam">
-                                        <img src="img/gallery-img/5.jpg" alt="">
-                                        <!-- Hover Content-->
-                                        <div class="hover_gallery_content">
-                                            <!-- Project Title-->
-                                            <div class="project_title">
-                                                <h5 class="mb-0">Living Room Staircases</h5>
-                                            </div>
+                                    <!-- 图库 内容 -->
+                                    <div class="gallery--single-content">
+                                        <div class="gallery--image">
+                                            <img src="img/bg-img/gallery-3.jpg" alt="">
+                                        </div>
+                                        <div class="gallery_service_text">
+                                            <h3>历史的桥梁</h3>
+                                            <a href="#">阅读更多<i class="fa fa-angle-double-right"></i></a>
                                         </div>
                                     </div>
                                 </div>

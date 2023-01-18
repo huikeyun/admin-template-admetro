@@ -126,7 +126,7 @@
         new WOW().init();
     }
 
-    // :: Gallery 激活代码
+    // :: 图库 激活代码
     if ($.fn.imagesLoaded) {
         $('.gallery_full_width_images_area').imagesLoaded(function () {
 
