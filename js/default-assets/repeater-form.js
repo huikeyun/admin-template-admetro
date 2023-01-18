@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
     
-    // :: Form repeater Active Code
+    // :: 表单转发器激活代码
     $('.repeater-default').repeater({
         show: function () {
             $(this).slideDown('slow');
@@ -10,8 +10,8 @@
     $('.default-repeater').repeater({
         defaultValues: {
             features: ['abs'],
-            make: 'ford',
-            model: 'Mustang'
+            make: '福特',
+            model: '野马'
         }
     });
     $('.repeater-slide').repeater({
@@ -23,7 +23,7 @@
             'radio-input': 'B'
         },
         hide: function (deleteElement) {
-            if (confirm('Are you sure you want to delete this element?')) {
+            if (confirm('您确定要删除此元素吗？')) {
                 $(this).slideUp(deleteElement);
             }
         }

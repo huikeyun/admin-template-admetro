@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
     
-    // :: Notify Message Active Code
+    // :: Notify Message 激活代码
     function notify(message, type) {
         $.growl({
             message: message
