@@ -93,13 +93,13 @@ Version: v1.0
 ---------------------------------- */
 /* Import Fonts & CSS Files */
 /*@import url("https://fonts.googleapis.com/css?family=Archivo:400,500,600,700");*/
-@import url(https://cdn.staticfile.org/bootstrap/4.6.2/css/bootstrap.min.css);
+@import url("https://cdn.staticfile.org/bootstrap/4.6.2/css/bootstrap.min.css");
 @import url(css/owl.carousel.min.css);
 @import url(css/animate.css);
 @import url(css/nice-select.css);
 @import url(css/jquery-ui.min.css);
 @import url(css/default-assets/themify-icons.css);
-@import url(css/font-awesome.min.css);
+@import url("https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css");
 @import url(css/pe-icon-7-stroke.min.css);
 @import url(css/style.css);
 @import url(css/material-design-iconic-font.min.css);
