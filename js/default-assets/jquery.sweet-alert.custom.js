@@ -1,89 +1,90 @@
-! function ($) {
+!function ($) {
     "use strict";
 
-    var SweetAlert = function () {};
+    const SweetAlert = function () {
+    };
 
-    //examples 
+    // 示例
     SweetAlert.prototype.init = function () {
 
-            //Basic
-            $('#sa-basic').click(function () {
-                swal("Here's a message!");
-            });
+        // 基础
+        $('#sa-basic').click(function () {
+            swal("这是一条消息！");
+        });
 
-            //A title with a text under
-            $('#sa-title').click(function () {
-                swal("Here's a message!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.")
-            });
+        // 标题下有文字
+        $('#sa-title').click(function () {
+            swal("这是一条消息！", "易卜生曾经说过，伟大的事业，需要决心，能力，组织和责任感。")
+        });
 
-            //Success Message
-            $('#sa-success').click(function () {
-                swal("Good job!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.", "success")
-            });
+        // 成功信息
+        $('#sa-success').click(function () {
+            swal("做得好！", "易卜生曾经说过，伟大的事业，需要决心，能力，组织和责任感。", "success")
+        });
 
-            //Warning Message
-            $('#sa-warning').click(function () {
-                swal({
-                    title: "Are you sure?",
-                    text: "You will not be able to recover this imaginary file!",
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#DD6B55",
-                    confirmButtonText: "Yes, delete it!",
-                    closeOnConfirm: false
-                }, function () {
+        // 警告信息
+        $('#sa-warning').click(function () {
+            swal({
+                title: "你确定吗？",
+                text: "你将无法恢复这个虚构的文件！",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#dd6b55",
+                confirmButtonText: "Yes, delete it!",
+                closeOnConfirm: false
+            }, function () {
+                swal("Deleted!", "Your imaginary file has been deleted.", "success");
+            });
+        });
+
+        // 范围
+        $('#sa-params').click(function () {
+            swal({
+                title: "你确定吗？",
+                text: "你将无法恢复这个虚构的文件！",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#dd6b55",
+                confirmButtonText: "Yes, delete it!",
+                cancelButtonText: "No, cancel plx!",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            }, function (isConfirm) {
+                if (isConfirm) {
                     swal("Deleted!", "Your imaginary file has been deleted.", "success");
-                });
+                } else {
+                    swal("Cancelled", "Your imaginary file is safe :)", "error");
+                }
             });
+        });
 
-            //Parameter
-            $('#sa-params').click(function () {
-                swal({
-                    title: "Are you sure?",
-                    text: "You will not be able to recover this imaginary file!",
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#DD6B55",
-                    confirmButtonText: "Yes, delete it!",
-                    cancelButtonText: "No, cancel plx!",
-                    closeOnConfirm: false,
-                    closeOnCancel: false
-                }, function (isConfirm) {
-                    if (isConfirm) {
-                        swal("Deleted!", "Your imaginary file has been deleted.", "success");
-                    } else {
-                        swal("Cancelled", "Your imaginary file is safe :)", "error");
-                    }
-                });
+        // 自定义图片
+        $('#sa-image').click(function () {
+            swal({
+                title: "戈文达！",
+                text: "最近加入推特",
+                imageUrl: "../../images/avatar.png"
             });
+        });
 
-            //Custom Image
-            $('#sa-image').click(function () {
-                swal({
-                    title: "Govinda!",
-                    text: "Recently joined twitter",
-                    imageUrl: "../../images/avatar.png"
-                });
+        //Auto Close Timer
+        $('#sa-close').click(function () {
+            swal({
+                title: "自动关闭警报！",
+                text: "我将在 2 秒内关闭。",
+                timer: 2000,
+                showConfirmButton: false
             });
-
-            //Auto Close Timer
-            $('#sa-close').click(function () {
-                swal({
-                    title: "Auto close alert!",
-                    text: "I will close in 2 seconds.",
-                    timer: 2000,
-                    showConfirmButton: false
-                });
-            });
+        });
 
 
-        },
+    },
         //init
         $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
 }(window.jQuery),
 
 //initializing 
-function ($) {
-    "use strict";
-    $.SweetAlert.init()
-}(window.jQuery);
+    function ($) {
+        "use strict";
+        $.SweetAlert.init()
+    }(window.jQuery);
