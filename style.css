@@ -46,7 +46,7 @@ Version: v1.0
         + Fill Button
         + Gradients Button
         + 图标 Button
-        + Notifications
+        + 通知s
         + Typography
         + Dragula
         + Google Chart
@@ -3392,7 +3392,7 @@ button.btn-primary.dim {
     content: "\e001";
 }
 .btn-success-1:after {
-    content: "Success!";
+    content: "成功！";
     -moz-animation: moveUp 0.5s;
     -webkit-animation: moveUp 0.5s;
     animation: moveUp 0.5s;
@@ -3493,7 +3493,7 @@ button.btn-primary.dim {
     content: "\e002";
 }
 .btn-error:after {
-    content: "Error!";
+    content: "错误！";
     -moz-animation: scaleFromUp 0.5s;
     -webkit-animation: scaleFromUp 0.5s;
     animation: scaleFromUp 0.5s;
@@ -3815,7 +3815,7 @@ button.btn-primary.dim {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     font-weight: 700;
     top: 100%;
-    content: 'Error!';
+    content: '错误！';
     -moz-transform: rotateX(-90deg);
     -ms-transform: rotateX(-90deg);
     -webkit-transform: rotateX(-90deg);
@@ -3849,7 +3849,7 @@ button.btn-primary.dim {
     transform-origin: 50% 0%;
     background: #aaaaaa;
 }
-/* :: Notification CSS */
+/* :: 通知 CSS */
 .alert .close {
     font-size: 18px;
     position: relative;
