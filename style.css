@@ -97,13 +97,13 @@ Version: v1.0
 @import url("https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css");
 @import url("https://cdn.staticfile.org/font-awesome/6.2.1/css/v4-shims.min.css");
 @import url(css/pe-icon-7-stroke.min.css);
-@import url(css/owl.carousel.min.css);
-@import url(css/animate.css);
-@import url(css/nice-select.css);
-@import url(css/jquery-ui.min.css);
+@import url("https://cdn.staticfile.org/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+@import url("https://cdn.staticfile.org/animate.css/4.1.1/animate.min.css");
+@import url("https://cdn.staticfile.org/jquery-nice-select/1.1.0/css/nice-select.min.css");
+@import url("https://cdn.staticfile.org/jqueryui/1.13.2/themes/base/jquery-ui.min.css");
 @import url(css/default-assets/themify-icons.css);
 @import url(css/style.css);
-@import url(css/material-design-iconic-font.min.css);
+@import url("https://cdn.staticfile.org/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css");
 @import url(etline/style.css);
 /* :: Reboot CSS */
 * {
@@ -4838,6 +4838,12 @@ button.btn-primary.dim {
     border: 1px solid #ebebeb;
     background-color: transparent;
 }
+.fc-listMonth-button.btn.btn-primary {
+    font-size: 14px;
+    color: #222222 !important;
+    border: 1px solid #ebebeb;
+    background-color: transparent;
+}
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
@@ -4890,7 +4896,7 @@ button.btn-primary.dim {
 }
 .fc-month-button.btn.btn-primary.active,
 .fc-agendaWeek-button.btn.btn-primary.active,
-.fc-agendaDay-button.btn.btn-primary.active {
+.fc-agendaDay-button.btn.btn-primary.active, .fc-listMonth-button.btn.btn-primary.active {
     color: #2478fd !important;
 }
 .event-filter {

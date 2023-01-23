@@ -97,11 +97,12 @@
         },
 
         header: {
-            left: 'title',
-            center: 'month,agendaWeek,agendaDay',
-            right: 'prev,next today'
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay,listMonth'
         },
 
+        locale:"zh-cn",
         defaultDate: today,
         navLinks: true,
         selectable: true,
@@ -164,9 +165,9 @@
         },
 
         header: {
-            left: 'title',
-            center: 'listDay,listWeek,month',
-            right: 'prev,next today'
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay,listMonth'
         },
 
         views: {
