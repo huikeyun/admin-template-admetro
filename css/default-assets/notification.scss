@@ -1,0 +1,107 @@
+.alert {
+    font-size: 15px;
+    margin-bottom: 18px;
+    padding: 15px 15px 15px 30px;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    &.alert-light-default {
+        color: #3f4047;
+        border-color: #ebebeb;
+        background-color: #f0f0f0;
+    }
+    &.alert-light-primary {
+        color: #2478fd;
+        border-color: #2478fd;
+        background-color: #c2d5ff;
+    }
+    &.alert-light-warning {
+        color: #fda006;
+        border-color: #fda006;
+        background-color: #ffeccb;
+    }
+    &.alert-light-success {
+        color: #71c016;
+        border-color: #71c016;
+        background-color: #b6fff1;
+    }
+    &.alert-light-info {
+        color: #3da5f4;
+        border-color: #3da5f4;
+        background-color: #bae7ff;
+    }
+    &.alert-light-danger {
+        color: #f1536e;
+        border-color: #f1536e;
+        background-color: #ffe1e2;
+    }
+    &.alert-light-dark {
+        color: #3f4047;
+        border-color: #3f4047;
+        background-color: #acb0c3;
+    }
+    &.alert-outline-primary {
+        border-color: #2478fd;
+        border-radius: 5px;
+    }
+    &.alert-outline-warning {
+        border-color: #fdb901;
+        border-radius: 5px;
+    }
+    &.alert-outline-success {
+        border-color: #5ed84f;
+        border-radius: 5px;
+    }
+    &.alert-outline-info {
+        border-color: #3da5f4;
+        border-radius: 5px;
+    }
+    &.alert-outline-danger {
+        border-color: #f1536e;
+        border-radius: 5px;
+    }
+    &.alert-outline-default {
+        border-color: #ebebeb;
+        border-radius: 5px;
+        background: transparent;
+    }
+    &.alert-outline-dark {
+        border-color: #282f3a;
+        border-radius: 5px;
+    }
+    &.alert-dismissable {
+        padding-right: 44px
+    }
+    &:not(.alert-dismissible) {
+        padding-right: 30px
+    }
+    .close {
+        font-size: 18px;
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+        opacity: 1;
+        color: #ffffff;
+        text-shadow: none;
+    }
+    .alert-link {
+        color: #e6e6e6
+    }
+    h4 {
+        margin-top: 0;
+        color: inherit;
+    }
+    .alert-link {
+        font-weight: 700
+    }
+    & > p,
+    & > ul {
+        margin-bottom: 0
+    }
+    & > p + p {
+        margin-top: 5px
+    }
+    hr {
+        border-top-color: transparent
+    }
+}
