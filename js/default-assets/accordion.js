@@ -1,10 +1,10 @@
 (function ($) {
-    var d = document,
-        accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
-        setAria,
+    const d = document,
+        accordionToggles = d.querySelectorAll('.js-accordionTrigger');
+    let setAria,
         setAccordionAria,
-        switchAccordion,
-        touchSupported = ('ontouchstart' in window),
+        switchAccordion;
+    const touchSupported = ('ontouchstart' in window),
         pointerSupported = ('pointerdown' in window);
 
     skipClickDelay = function (e) {
@@ -34,8 +34,8 @@
     switchAccordion = function (e) {
         console.log("triggered");
         e.preventDefault();
-        var thisAnswer = e.target.parentNode.nextElementSibling;
-        var thisQuestion = e.target;
+        const thisAnswer = e.target.parentNode.nextElementSibling;
+        const thisQuestion = e.target;
         if (thisAnswer.classList.contains('is-collapsed')) {
             setAccordionAria(thisQuestion, thisAnswer, 'true');
         } else {
@@ -48,7 +48,9 @@
 
         thisAnswer.classList.toggle('animateIn');
     };
-    for (var i = 0, len = accordionToggles.length; i < len; i++) {
+    let i = 0;
+    const len = accordionToggles.length;
+    for (; i < len; i++) {
         if (touchSupported) {
             accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
         }
