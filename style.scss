@@ -1,96 +1,96 @@
 /* ----------------------------------
-[Master Stylesheet]
+[主样式表]
 
-Template Name: Admetro - Responsive Bootstrap 4 Admin Template
-Version: v1.0
+模板名称：Admetro - 自适应 Bootstrap 4 管理模板
+版本： v1.0
 ------------------------------------ */
 /* ------------------------------------
-  [Table of Contents]
+    [目录]
 
-    * Google Fonts
-    * Include Third Party CSS Library
-        + Bootstrap CSS
-        + Classynav CSS
-        + Owl Carousel CSS
-        + Animate CSS
-        + Nice Select CSS
-        + jQuery UI CSS
-    * Include Web 图标 Fonts
+    * 谷歌字体
+    * 包含第三方样式库
+        + Bootstrap 样式
+        + Classynav 样式
+        + Owl Carousel 样式
+        + Animate 样式
+        + Nice Select 样式
+        + jQuery UI 样式
+    * 包括网络图标字体
         + Themify 图标
         + Font Awesome
         + Pe 7 Stroke
         + Elegant 图标
         + Material Design 图标字体
         + Etline
-    * Template Mixins
-        + Flex Mixins
-        + Miscellaneous Mixins
-    * Template Responsive
-    * Template Variables
-    * Template Colors
-    * Core Styles
-        + Reboot CSS
-            + Reset Styles
-            + Typography
-            + Utilities
-        + Bootstraping CSS
-            + Header CSS
-            + Sidebar CSS
-            + Footer CSS
-            + Vertical Light Nav CSS
-    * Components
+    * 模板混合
+        + 弹性混合
+        + 其他混合
+    * 模板自适应
+    * 模板变量
+    * 模板颜色
+    * 核心风格
+        + 初始化样式
+            + 重置样式
+            + 排版
+            + 实用程序
+        + Bootstraping 样式
+            + 标题 样式
+            + 侧边栏 样式
+            + 页脚 样式
+            + 垂直轻量导航 样式
+    * 组件
         + 手风琴
         + 徽章
-        + Buttons
-        + Fill Button
-        + Gradients Button
-        + 图标 Button
-        + 通知s
-        + Typography
-        + Dragula
-        + Google Chart
-        + Am Chart
-        + Timeline
-        + Invoice
-        + Blog
+        + 按钮
+        + 填充按钮
+        + 渐变按钮
+        + 图片按钮
+        + 通知
+        + 排版
+        + 德古拉
+        + 谷歌图表
+        + 图表
+        + 时间表
+        + 发票
+        + 博客
         + 敏捷项目管理
         + 日历
-        + Team
-        + Profile
-        + Slider
-        + Banner
+        + 团队
+        + 简介
+        + 滑块
+        + 横幅
         + 文件管理器
-        + Gallery
-        + Chat
-        + Form Wizard
+        + 图库
+        + 聊天
+        + 表单向导
         + 基本形式
-        + Login
-        + Loader
+        + 登录
+        + 加载程序
         + 代码编辑器
-        + Todo List
-        + Widgets
-        + Typography
+        + 待办事项列表
+        + 小部件
+        + 排版
         + 右键菜单
-        + Contact
-        + Pricing Table
+        + 联系方式
+        + 定价表
         + 数据表格
-        + CTA
-        + Web 图标
-    * Email
-        + Inbox
-        + Email View
-        + Compose View
-    * Landing Pages
-        + Coming Soon
+        + 号召性用语
+        + 网页图标
+    * 电子邮件
+        + 收件箱
+        + 邮件查看
+        + 撰写视图
+    * 登录页面
+        + 即将推出
         + 404
-    * Dark Template CSS
+    * 深色模板样式
 ------------------------------------ */
 /* ----------------------------------
 # [font-family]
-'Archivo', sans-serif;
+"sarasa-gothic-sc-regular", sans-serif;
 
 ---------------------------------- */
-/* Import Fonts & CSS Files */
+/* 导入字体和 样式文件 */
 @import url("https://fonts.13aq.com/sarasa-gothic-sc/sarasa-gothic-sc.min.css");
 @import url("https://cdn.staticfile.org/bootstrap/4.6.2/css/bootstrap.min.css");
 @import url("https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css");
@@ -1794,23 +1794,206 @@ top-notifications-area {
         transform: translate3d(0, 42px, 0);
     }
 }
-/* :: Badges 样式 */
-button.dim {
-    font-weight: 600;
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    padding-top: 6px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 5px;
+/* :: 手风琴 样式 */
+.accordion {
+    .card-header {
+        position: relative;
+        z-index: 1;
+        -o-transition-duration: 500ms;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        border: 1px solid #ebebeb;
+        &.heading-8 {
+            border: none;
+        }
+    }
+    .acco-tab-heading-8 a {
+        letter-spacing: 0.5px;
+        color: #ffffff;
+    }
+    .accordion-content {
+        margin-bottom: 0;
+        p {
+            padding: 15px;
+        }
+    }
+    dd,
+    .accordion__panel {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .accordionTitle,
+    .accordion__Heading {
+        font-weight: 700;
+        display: block;
+        padding: 1.70rem 2rem;
+        -o-transition: background-color 0.5s ease-in-out;
+        -webkit-transition: background-color 0.5s ease-in-out;
+        transition: background-color 0.5s ease-in-out;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        border-bottom: 1px solid #006fe6;
+        background-color: #007bff;
+        &:before {
+            font-size: 1.5em;
+            line-height: 1;
+            float: left;
+            content: "+";
+            -o-transition: transform 0.3s ease-in-out;
+            -webkit-transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover, &:focus {
+            color: #ffffff !important;
+            background-color: #0062cc;
+        }
+    }
+    .accordionTitleActive,
+    .accordionTitle.is-expanded {
+        background-color: #0062cc;
+        &:before {
+            -ms-transform: rotate(-225deg);
+            -webkit-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+        }
+    }
+    .accordionItem {
+        overflow: hidden;
+        height: auto;
+        max-height: 50em;
+        -o-transition: max-height 1s;
+        -webkit-transition: max-height 1s;
+        transition: max-height 1s;
+        &.is-collapsed {
+            max-height: 0;
+        }
+    }
+    .accordion-title.accordionTitle.js-accordionTrigger {
+        font-weight: 400;
+        color: #ffffff;
+    }
+    &.accordian-style-1 a {
+        color: #2478fd;
+        &.collapsed {
+            color: #222222;
+        }
+    }
+    &.accordian-style-2 a {
+        color: #2478fd;
+        &.collapsed {
+            color: #222222;
+        }
+    }
+    &.accordian-style-3 {
+        .card .card-header {
+            padding: 1.5rem 2rem;
+            background-color: #2478fd;
+        }
+        a {
+            color: #ffffff;
+            span {
+                font-size: 20px;
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                right: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 100%;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                i.fa-angle-down {
+                    display: block;
+                }
+                i.fa-angle-up {
+                    display: none;
+                }
+            }
+            &.collapsed {
+                color: #ffffff;
+                i.fa-angle-down {
+                    display: none;
+                }
+                i.fa-angle-up {
+                    display: block;
+                }
+            }
+        }
+    }
+    .animateIn {
+        -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
+        animation: accordionIn 0.45s normal ease-in-out both 1;
+    }
+    .animateOut {
+        -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
+        animation: accordionOut 0.45s alternate ease-in-out both 1;
+    }
 }
-button.btn-primary.dim {
-    -webkit-box-shadow: inset 0 0 0 #26a69a, 0 5px 0 0 #26a69a, 0 10px 5px #767676 !important;
-    box-shadow: inset 0 0 0 #26a69a, 0 5px 0 0 #26a69a, 0 10px 5px #767676 !important;
+@media screen and (min-width: 48em) {
+    .accordionItem {
+        max-height: 15em;
+        -o-transition: max-height 0.5s;
+        -webkit-transition: max-height 0.5s;
+        transition: max-height 0.5s;
+    }
+}
+@keyframes accordionIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.9) rotateX(-60deg);
+        -ms-transform: scale(0.9) rotateX(-60deg);
+        transform: scale(0.9) rotateX(-60deg);
+        -webkit-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes accordionOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.9) rotateX(-60deg);
+        -ms-transform: scale(0.9) rotateX(-60deg);
+        transform: scale(0.9) rotateX(-60deg);
+    }
+}
+/* :: 徽章 样式 */
+button {
+    &.dim {
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        padding-top: 6px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+    &.btn-primary.dim {
+        -webkit-box-shadow: inset 0 0 0 #26a69a, 0 5px 0 0 #26a69a, 0 10px 5px #767676 !important;
+        box-shadow: inset 0 0 0 #26a69a, 0 5px 0 0 #26a69a, 0 10px 5px #767676 !important;
+    }
 }
 .badge {
     font-size: 10px;
@@ -1818,6 +2001,9 @@ button.btn-primary.dim {
     line-height: 1;
     padding: 8px 15px;
     border-radius: 0;
+    &.badge-pill {
+        border-radius: 10rem;
+    }
 }
 .btn-outline {
     -o-transition: all 0.5s;
@@ -1830,9 +2016,6 @@ button.btn-primary.dim {
     font-size: 42px;
     width: 90px;
     height: 90px;
-}
-.badge.badge-pill {
-    border-radius: 10rem;
 }
 .badge-outline-primary {
     color: #2478fd;
@@ -1854,49 +2037,51 @@ button.btn-primary.dim {
     color: #fda006;
     border: 1px solid #fda006;
 }
-/* :: Button 样式 */
-.btn.rounded-btn {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 45px;
-    min-width: 140px;
-    height: 45px;
-    padding: 0 15px;
-    -o-transition-duration: 500ms;
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    letter-spacing: 0;
-    color: #ffffff;
-    border: none;
-    border-radius: 22.5px;
+/* :: 按钮 样式 */
+.btn {
+    &.rounded-btn {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 45px;
+        min-width: 140px;
+        height: 45px;
+        padding: 0 15px;
+        -o-transition-duration: 500ms;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        letter-spacing: 0;
+        color: #ffffff;
+        border: none;
+        border-radius: 22.5px;
+    }
 }
-/* :: Fill-button 样式 */
+/* :: 填充按钮 样式 */
 .btn-fill {
     position: relative;
     z-index: 2;
     overflow: hidden;
     padding: 0.4375rem 1.25rem;
     border: 1px solid #007bff;
-}
-.btn-fill:hover, .btn-fill:focus {
-    color: #ffffff;
-}
-.btn-fill:hover:after, .btn-fill:focus:after {
-    height: 100%;
-    background: #007bff;
-}
-.btn-fill:after {
-    position: absolute;
-    z-index: -2;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    content: '';
-    -o-transition: 0.3s all linear;
-    -webkit-transition: 0.3s all linear;
-    transition: 0.3s all linear;
+    &:hover, &:focus {
+        color: #ffffff;
+        &::after {
+            height: 100%;
+            background: #007bff;
+        }
+    }
+    &::after {
+        position: absolute;
+        z-index: -2;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        content: '';
+        -o-transition: 0.3s all linear;
+        -webkit-transition: 0.3s all linear;
+        transition: 0.3s all linear;
+    }
 }
 .btn-fill-white {
     color: #ffffff !important;
@@ -1910,82 +2095,109 @@ button.btn-primary.dim {
     border: 1px solid #ebebeb !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.btn-fill-default:hover:after, .btn-fill-default:focus:after {
-    background-color: #ebebeb;
+    &:hover,
+    &:focus {
+        &::after {
+            background-color: #ebebeb;
+        }
+    }
 }
 .btn-fill-primary {
     color: #2478fd !important;
     border: 1px solid #2478fd !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.btn-fill-primary:hover:after, .btn-fill-primary:focus:after {
-    background-color: #2478fd;
+    &:hover,
+    &:focus {
+        &::after {
+            background-color: #2478fd;
+        }
+    }
 }
 .btn-fill-info {
     color: #3da5f4 !important;
     border: 1px solid #3da5f4 !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.btn-fill-info:hover:after, .btn-fill-info:focus:after {
-    background-color: #3da5f4;
+    &:hover,
+    &:focus {
+        &::after {
+            background-color: #3da5f4;
+        }
+    }
 }
 .btn-fill-success {
     color: #71c016 !important;
     border: 1px solid #71c016 !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.btn-fill-success:hover:after, .btn-fill-success:focus:after {
-    background-color: #71c016;
+    &:hover,
+    &:focus {
+        &::after {
+            background-color: #71c016;
+        }
+    }
 }
 .btn-fill-danger {
     color: #f1536e !important;
     border: 1px solid #f1536e !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.btn-fill-danger:hover:after, .btn-fill-danger:focus:after {
-    background-color: #f1536e;
+    &:hover,
+    &:focus {
+        &::after {
+            background-color: #f1536e;
+        }
+    }
 }
 .btn-fill-warning {
     color: #fda006 !important;
     border: 1px solid #fda006 !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.btn-fill-warning:hover:after, .btn-fill-warning:focus:after {
-    background-color: #fda006;
+    &:hover,
+    &:focus {
+        &::after {
+            background-color: #fda006;
+        }
+    }
 }
 .btn-fill-secondary {
     color: #8897aa !important;
     border: 1px solid #8897aa !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.btn-fill-secondary:hover:after, .btn-fill-secondary:focus:after {
-    background-color: #8897aa;
+    &:hover,
+    &:focus {
+        &::after {
+            background-color: #8897aa;
+        }
+    }
 }
 .btn-fill-dark {
     color: #3f4047 !important;
     border: 1px solid #3f4047 !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.btn-fill-dark:hover:after, .btn-fill-dark:focus:after {
-    background-color: #3f4047;
+    &:hover,
+    &:focus {
+        &::after {
+            background-color: #3f4047;
+        }
+    }
 }
 .btn-fill--white {
     color: #ffffff !important;
     border: 1px solid #ffffff !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.btn-fill--white:hover:after, .btn-fill--white:focus:after {
-    border: transparent !important;
-    background-color: transparent;
+    &:hover,
+    &:focus {
+        &::after {
+            border: transparent !important;
+            background-color: transparent;
+        }
+    }
 }
 .btn-fill-default:hover, .btn-fill-default:focus {
     color: #3f4047 !important;
@@ -2118,14 +2330,14 @@ button.btn-primary.dim {
     border: none;
     border-radius: 3px;
     outline: none;
-}
-.btn-:after {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    &::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
 }
 .btn-creative {
     font-size: inherit;
@@ -2142,25 +2354,29 @@ button.btn-primary.dim {
     border: none;
     outline: none;
     background: none;
+    &::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
 }
-.btn-creative:after {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
+
 .btn-1 {
     color: #ffffff;
     border: 1px solid transparent;
 }
-.btn-1a:hover,
-.btn-1a:active {
-    color: #3258db !important;
-    border: 1px solid #007bff !important;
-    background: #ffffff !important;
+.btn-1a{
+    &:hover,
+    &:active {
+        color: #3258db !important;
+        border: 1px solid #007bff !important;
+        background: #ffffff !important;
+    }
 }
+
 .btn-1b:after {
     top: 0;
     left: 0;
@@ -7709,7 +7925,7 @@ img.mfp-img {
     height: 100%;
     border: none;
 }
-/* :: Typography 样式 */
+/* :: 排版 样式 */
 .link-btn-typo {
     display: inline-block;
     margin-bottom: 15px;

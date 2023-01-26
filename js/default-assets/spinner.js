@@ -2,7 +2,7 @@
     "use strict";
     
     $('.has-spinner').click(function () {
-        var btn = $(this);
+        const btn = $(this);
         $(btn).buttonLoader('start');
         setTimeout(function () {
             $(btn).buttonLoader('stop');
