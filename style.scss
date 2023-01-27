@@ -3004,8 +3004,6 @@ button {
         background: transparent;
     }
 }
-
-
 .btn-6l {
     border: 3px double #ec2330;
     background: #ec2330;
@@ -3014,8 +3012,6 @@ button {
         background: transparent;
     }
 }
-
-
 .btn-7 {
     padding: 12px 15px 12px 50px;
     color: #ffffff;
@@ -3046,7 +3042,6 @@ button {
         }
     }
 }
-
 @-webkit-keyframes fadeOutText {
     0% {
         color: transparent;
@@ -3493,7 +3488,7 @@ button {
         color: #ffffff;
     }
 }
-.btn-success-1{
+.btn-success-1 {
     &:before {
         content: "\e001";
     }
@@ -3771,7 +3766,7 @@ button {
         transform: rotateX(-15deg);
     }
 }
-.btn-8b{
+.btn-8b {
     &:after {
         top: 100%;
         left: 0;
@@ -3794,7 +3789,7 @@ button {
         transform: rotateX(15deg);
     }
 }
-.btn-8c{
+.btn-8c {
     &:after {
         top: 0;
         left: -20%;
@@ -3817,7 +3812,7 @@ button {
         transform: rotateY(15deg);
     }
 }
-.btn-8d{
+.btn-8d {
     &:after {
         top: 0;
         left: 100%;
@@ -3867,7 +3862,6 @@ button {
         transform: rotateX(0deg);
     }
 }
-
 .btn-8f {
     -moz-transform: rotateX(15deg);
     -ms-transform: rotateX(15deg);
@@ -3963,19 +3957,20 @@ button {
         background: #aaaaaa;
     }
 }
-
-/* :: Notification 样式 */
-.alert .close {
-    font-size: 18px;
-    position: relative;
-    z-index: 10;
-    opacity: 1;
-    color: #ffffff;
-    text-shadow: none;
-}
-.alert > i {
-    font-size: 12px;
-    margin-right: 5px;
+/* :: 通知 样式 */
+.alert {
+    .close {
+        font-size: 18px;
+        position: relative;
+        z-index: 10;
+        opacity: 1;
+        color: #ffffff;
+        text-shadow: none;
+    }
+    & > i {
+        font-size: 12px;
+        margin-right: 5px;
+    }
 }
 .alert-default i.close {
     color: #3f4047;
@@ -4024,18 +4019,18 @@ button {
     border-radius: 3px;
     box-shadow: none !important;
 }
-/* :: Dragula 样式 */
+/* :: 德古拉 样式 */
 .dragula-example {
     margin-bottom: 6px;
 }
 .sortable-example {
     margin: 0;
     padding: 0;
-}
-.sortable-example li {
-    margin-bottom: 8px;
-    padding: 6px 10px;
-    list-style: none;
+    li {
+        margin-bottom: 8px;
+        padding: 6px 10px;
+        list-style: none;
+    }
 }
 .sortable-example-inline li {
     display: inline-block;
@@ -4047,22 +4042,22 @@ button {
 }
 #sortable-3 {
     width: 220px;
-}
-#sortable-3 img {
-    display: block;
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    border-radius: 999px;
+    img {
+        display: block;
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        border-radius: 999px;
+    }
 }
 [dir=rtl] #sortable-3 img {
     float: right;
     margin-right: 0;
     margin-left: 8px;
 }
-/* :: Google Chart 样式 */
+/* :: 谷歌图表 样式 */
 #chart_google,
 #chart_google_c,
 #chart_pie,
@@ -4076,7 +4071,7 @@ button {
     width: 100%;
     height: 400px;
 }
-/* :: Am-chart 样式 */
+/* :: Am 图表 样式 */
 #simplecolumnchartdiv,
 #columnlinemixchartdiv,
 #clusteredbarchartdiv,
@@ -4112,47 +4107,51 @@ button {
     width: 100%;
     height: 400px;
 }
-/* :: Timeline 样式 */
+/* :: 时间线 样式 */
 #vertical-timeline {
     position: relative;
     margin-top: 2em;
     margin-bottom: 2em;
     padding: 0;
-}
-#vertical-timeline::before {
-    position: absolute;
-    top: 0;
-    left: 18px;
-    width: 4px;
-    height: 100%;
-    content: '';
-    background-color: #ebebeb;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 18px;
+        width: 4px;
+        height: 100%;
+        content: '';
+        background-color: #ebebeb;
+    }
 }
 .vertical-timeline-content .btn- {
     float: right;
 }
-.light--timeline .vertical-timeline-content:before {
-    border-color: transparent #ffffff transparent transparent;
-}
-.light--timeline.center-orientation .vertical-timeline-content:before {
-    border-color: transparent transparent transparent #ffffff;
-}
-.light--timeline .vertical-timeline-block:nth-child(2n) .vertical-timeline-content:before,
-.light--timeline.center-orientation .vertical-timeline-block:nth-child(2n) .vertical-timeline-content:before {
-    border-color: transparent #ffffff transparent transparent;
-}
-.light--timeline .vertical-timeline-content,
-.llight--timeline.center-orientation .vertical-timeline-content {
-    background: #ffffff;
+.light--timeline {
+    .vertical-timeline-content:before {
+        border-color: transparent #ffffff transparent transparent;
+    }
+    &.center-orientation .vertical-timeline-content:before {
+        border-color: transparent transparent transparent #ffffff;
+    }
+    .vertical-timeline-block:nth-child(2n) .vertical-timeline-content:before,
+    &.center-orientation .vertical-timeline-block:nth-child(2n) .vertical-timeline-content:before {
+        border-color: transparent #ffffff transparent transparent;
+    }
+    .vertical-timeline-content,
+    &.center-orientation .vertical-timeline-content {
+        background: #ffffff;
+    }
 }
 @media only screen and (min-width: 1170px) {
-    #vertical-timeline.center-orientation {
-        margin-top: 3em;
-        margin-bottom: 3em;
-    }
-    #vertical-timeline.center-orientation:before {
-        left: 50%;
-        margin-left: -2px;
+    #vertical-timeline {
+        &.center-orientation {
+            margin-top: 3em;
+            margin-bottom: 3em;
+            &:before {
+                left: 50%;
+                margin-left: -2px;
+            }
+        }
     }
 }
 @media only screen and (max-width: 1170px) {
@@ -4163,27 +4162,29 @@ button {
 .vertical-timeline-block {
     position: relative;
     margin: 2em 0;
-}
-.vertical-timeline-block:after {
-    display: table;
-    clear: both;
-    content: "";
-}
-.vertical-timeline-block:first-child {
-    margin-top: 0;
-}
-.vertical-timeline-block:last-child {
-    margin-bottom: 0;
-}
-@media only screen and (min-width: 1170px) {
-    .center-orientation .vertical-timeline-block {
-        margin: 4em 0;
+    &:after {
+        display: table;
+        clear: both;
+        content: "";
     }
-    .center-orientation .vertical-timeline-block:first-child {
+    &:first-child {
         margin-top: 0;
     }
-    .center-orientation .vertical-timeline-block:last-child {
+    &:last-child {
         margin-bottom: 0;
+    }
+}
+@media only screen and (min-width: 1170px) {
+    .center-orientation {
+        .vertical-timeline-block {
+            margin: 4em 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 .vertical-timeline-icon {
@@ -4197,36 +4198,38 @@ button {
     border: 3px solid #ebebeb;
     border-radius: 50%;
     background-color: #71c016;
-}
-.vertical-timeline-icon i {
-    font-size: 16px;
-    line-height: 20px !important;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin-top: -9px;
-    margin-left: -12px;
-    color: #ffffff;
+    i {
+        font-size: 16px;
+        line-height: 20px !important;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-top: -9px;
+        margin-left: -12px;
+        color: #ffffff;
+    }
 }
 @media only screen and (min-width: 1170px) {
-    .center-orientation .vertical-timeline-icon {
-        font-size: 19px;
-        left: 50%;
-        width: 50px;
-        height: 50px;
-        margin-left: -25px;
-        -webkit-transform: translateZ(0);
-        -webkit-backface-visibility: hidden;
-    }
-    .center-orientation .vertical-timeline-icon i {
-        margin-top: -10px;
-        margin-left: -12px;
-    }
-    .center-orientation .cssanimations .vertical-timeline-icon.is-hidden {
-        visibility: hidden;
+    .center-orientation {
+        .vertical-timeline-icon {
+            font-size: 19px;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            margin-left: -25px;
+            -webkit-transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            i {
+                margin-top: -10px;
+                margin-left: -12px;
+            }
+        }
+        .cssanimations .vertical-timeline-icon.is-hidden {
+            visibility: hidden;
+        }
     }
 }
 .vertical-timeline-content {
@@ -4235,91 +4238,97 @@ button {
     padding: 1em;
     border-radius: 0.25em;
     background-color: #ffffff;
-}
-.vertical-timeline-content:after {
-    display: table;
-    clear: both;
-    content: "";
-}
-.vertical-timeline-content h5 {
-    font-weight: 400;
+    &::after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+    &::before {
+        position: absolute;
+        top: 16px;
+        right: 100%;
+        width: 0;
+        height: 0;
+        content: '';
+        border: 7px solid transparent;
+        border-right: 7px solid #ffffff;
+    }
+    h5 {
+        font-weight: 400;
+    }
+    .vertical-date {
+        font-weight: 500;
+        float: left;
+    }
+    p {
+        margin-right: 0 !important;
+    }
 }
 @media only screen and (max-width: 767px) {
     .vertical-timeline-content h5 {
         font-size: 16px;
     }
 }
-.vertical-timeline-content .vertical-date {
-    font-weight: 500;
-    float: left;
-}
 .vertical-date small {
     font-weight: 400;
     color: #8897aa;
 }
-.vertical-timeline-content::before {
-    position: absolute;
-    top: 16px;
-    right: 100%;
-    width: 0;
-    height: 0;
-    content: '';
-    border: 7px solid transparent;
-    border-right: 7px solid #ffffff;
-}
-.vertical-timeline-content p {
-    margin-right: 0 !important;
-}
 @media only screen and (min-width: 768px) {
-    .vertical-timeline-content h2 {
-        font-size: 18px;
-    }
-    .vertical-timeline-content p {
-        font-size: 14px;
+    .vertical-timeline-content {
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
     }
 }
 @media only screen and (min-width: 1170px) {
-    .center-orientation .vertical-timeline-content {
-        width: 45%;
-        margin-left: 0;
-        padding: 1.6em;
-    }
-    .center-orientation .vertical-timeline-content::before {
-        top: 24px;
-        left: 100%;
-        border-color: transparent;
-        border-left-color: #ffffff;
-    }
-    .center-orientation .vertical-timeline-content .btn {
-        float: left;
-    }
-    .center-orientation .vertical-timeline-content .vertical-date {
-        font-size: 14px;
-        position: absolute;
-        top: 2px;
-        left: 122%;
-        width: 100%;
-    }
-    .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content {
-        float: right;
-    }
-    .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content::before {
-        top: 24px;
-        right: 100%;
-        left: auto;
-        border-color: transparent;
-        border-right-color: #ffffff;
-    }
-    .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .btn {
-        float: right;
-    }
-    .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .vertical-date {
-        right: 122%;
-        left: auto;
-        text-align: right;
-    }
-    .center-orientation .cssanimations .vertical-timeline-content.is-hidden {
-        visibility: hidden;
+    .center-orientation {
+        .vertical-timeline-content {
+            width: 45%;
+            margin-left: 0;
+            padding: 1.6em;
+            &::before {
+                top: 24px;
+                left: 100%;
+                border-color: transparent;
+                border-left-color: #ffffff;
+            }
+            .btn {
+                float: left;
+            }
+            .vertical-date {
+                font-size: 14px;
+                position: absolute;
+                top: 2px;
+                left: 122%;
+                width: 100%;
+            }
+        }
+        .vertical-timeline-block:nth-child(even) {
+            .vertical-timeline-content {
+                float: right;
+                &::before {
+                    top: 24px;
+                    right: 100%;
+                    left: auto;
+                    border-color: transparent;
+                    border-right-color: #ffffff;
+                }
+                .btn {
+                    float: right;
+                }
+                .vertical-date {
+                    right: 122%;
+                    left: auto;
+                    text-align: right;
+                }
+            }
+        }
+        .cssanimations .vertical-timeline-content.is-hidden {
+            visibility: hidden;
+        }
     }
 }
 .tab--button--:hover {
