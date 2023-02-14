@@ -2318,7 +2318,7 @@ button {
     font-size: 12px;
     position: relative;
     display: inline-block;
-    padding: 10px 24px;
+    padding: 8px 24px;
     cursor: pointer;
     -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
@@ -6573,7 +6573,6 @@ img.mfp-img {
 }
 /* :: 基础表单 样式 */
 .form-group {
-    margin-bottom: 25px;
     label {
         font-size: 0.874rem;
         line-height: 1.4rem;
@@ -6593,6 +6592,15 @@ img.mfp-img {
     &:focus {
         border-color: #2478fd;
         box-shadow: none;
+    }
+    &.form-control-sm {
+        height: 35px;
+        line-height: 35px;
+        & > .list > li {
+            height: 35px;
+            line-height: 35px;
+            min-height: 35px;
+        }
     }
 }
 .input-group,
