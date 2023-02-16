@@ -6583,24 +6583,22 @@ img.mfp-img {
         display: none;
     }
 }
+.form-group {
+    label {
+        font-size: 0.874rem;
+        line-height: 1.4rem;
+        margin-bottom: 10px;
+        vertical-align: top;
+    }
+    .file-upload-default {
+        display: none;
+    }
+}
 .form-control {
     font-size: 12px;
-    height: 50px;
-    margin-bottom: 15px;
-    padding-left: 20px;
-    border-radius: 3px;
     &:focus {
         border-color: #2478fd;
         box-shadow: none;
-    }
-    &.form-control-sm {
-        height: 35px;
-        line-height: 35px;
-        & > .list > li {
-            height: 35px;
-            line-height: 35px;
-            min-height: 35px;
-        }
     }
 }
 .input-group,
@@ -8649,14 +8647,15 @@ table.dataTable thead > tr > td {
 }
 /* :: 账户 样式 */
 .nice-select {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 1.5;
     width: 100%;
-    height: 50px;
-    margin-right: 15px;
-    padding: 0 15px;
+    height: calc(1.5em + .75rem + 2px);
+    /*    margin-right: 15px;*/
+    padding: .375rem .75rem;
     text-transform: uppercase;
+    border: 1px solid #ced4da;
     .list {
         z-index: 9999999 !important;
     }
