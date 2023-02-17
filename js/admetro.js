@@ -265,5 +265,5 @@ document.write('<script src="https://cdn.staticfile.org/jquery.isotope/3.0.6/iso
 document.write('<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/jarallax/1.10.6/jarallax.min.js"><\/script>');
 document.write('<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/jarallax/1.12.8/jarallax-video.min.js"><\/script>');
 document.write('<script src="https://cdn.staticfile.org/jquery.countdown/2.2.0/jquery.countdown.min.js"><\/script>');
-/*document.write('<script src="https://cdn.staticfile.org/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"><\/script>');*/
+document.write('<script src="https://cdn.staticfile.org/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"><\/script>');
 document.write('<script src="https://cdn.staticfile.org/jqueryui/1.13.2/jquery-ui.min.js"><\/script>');
